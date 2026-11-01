@@ -45,6 +45,7 @@ export default function FloatingDock() {
       icon: Home,
       href: "/",
       isActive: pathname === "/",
+      desktopOnly: false,
     },
     {
       id: "catalog",
@@ -52,6 +53,7 @@ export default function FloatingDock() {
       icon: Grid,
       href: "/products",
       isActive: pathname === "/products" && !pathname.includes("category"),
+      desktopOnly: false,
     },
     {
       id: "tv-displays",
@@ -59,12 +61,14 @@ export default function FloatingDock() {
       icon: Tv,
       href: "/products?category=tv-displays",
       isActive: pathname.includes("tv-displays"),
+      desktopOnly: true, // Only show on tablet & desktop
     },
     {
       id: "search",
       title: "جستجوی سریع",
       icon: Search,
       onClick: openSearch,
+      desktopOnly: false,
     },
     {
       id: "wishlist",
@@ -74,6 +78,7 @@ export default function FloatingDock() {
       badge: wishlistCount,
       badgeColor: "bg-rose-500",
       isActive: pathname === "/wishlist",
+      desktopOnly: false,
     },
     {
       id: "cart",
@@ -83,21 +88,23 @@ export default function FloatingDock() {
       badge: cartCount,
       badgeColor: "bg-[#FF5B00]",
       isActive: pathname === "/cart",
+      desktopOnly: false,
     },
     {
       id: "scroll-top",
       title: "برگشت به بالا",
       icon: ArrowUp,
       onClick: scrollToTop,
+      desktopOnly: true, // Only show on tablet & desktop
     },
   ];
 
   return (
-    <div className="fixed bottom-4 sm:bottom-6 inset-x-0 flex justify-center z-40 pointer-events-none px-4">
+    <div className="fixed bottom-2.5 sm:bottom-6 inset-x-0 flex justify-center z-40 pointer-events-none px-2 sm:px-4 pb-[env(safe-area-inset-bottom,0px)]">
       <motion.nav
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
-        className="pointer-events-auto flex items-end gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/80 dark:bg-zinc-950/80 backdrop-blur-2xl border border-white/60 dark:border-white/10 shadow-[0_15px_35px_-5px_rgba(0,0,0,0.15)] ring-1 ring-black/5"
+        className="pointer-events-auto flex items-end gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-white/90 dark:bg-zinc-950/90 backdrop-blur-2xl border border-white/70 dark:border-white/10 shadow-[0_12px_32px_-4px_rgba(0,0,0,0.14)] ring-1 ring-black/5 max-w-[calc(100vw-20px)] sm:max-w-none overflow-visible"
       >
         {dockItems.map((item) => (
           <DockIcon
@@ -125,6 +132,7 @@ function DockIcon({
     badge?: number;
     badgeColor?: string;
     isActive?: boolean;
+    desktopOnly?: boolean;
   };
 }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -136,7 +144,7 @@ function DockIcon({
   });
 
   // Smooth magnification curve inspired by macOS dock
-  const widthSync = useTransform(distance, [-120, 0, 120], [42, 60, 42]);
+  const widthSync = useTransform(distance, [-120, 0, 120], [38, 54, 38]);
   const width = useSpring(widthSync, { mass: 0.1, stiffness: 180, damping: 14 });
 
   const Icon = item.icon;
@@ -153,14 +161,14 @@ function DockIcon({
           : "bg-zinc-100/80 hover:bg-zinc-200/90 text-zinc-700 hover:text-zinc-950"
       }`}
     >
-      <Icon className="w-5 h-5 shrink-0" />
+      <Icon className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
 
       {/* Item badge for cart / wishlist */}
       {item.badge !== undefined && item.badge > 0 && (
         <span
-          className={`absolute -top-1 -left-1 min-w-[18px] h-[18px] px-1 rounded-full ${
+          className={`absolute -top-1 -left-1 min-w-[16px] sm:min-w-[18px] h-4 sm:h-[18px] px-1 rounded-full ${
             item.badgeColor || "bg-[#FF5B00]"
-          } text-white text-[10px] font-extrabold flex items-center justify-center shadow-xs border-2 border-white`}
+          } text-white text-[9px] sm:text-[10px] font-extrabold flex items-center justify-center shadow-xs border-2 border-white`}
         >
           {toPersianDigits(item.badge)}
         </span>
@@ -168,10 +176,10 @@ function DockIcon({
 
       {/* Active Dot Indicator */}
       {item.isActive && (
-        <span className="absolute -bottom-1.5 w-1 h-1 rounded-full bg-[#FF5B00]" />
+        <span className="absolute -bottom-1 w-1 h-1 rounded-full bg-[#FF5B00]" />
       )}
 
-      {/* Persian Tooltip */}
+      {/* Persian Tooltip (Desktop only) */}
       <AnimatePresence>
         {isHovered && (
           <motion.div
@@ -179,7 +187,7 @@ function DockIcon({
             animate={{ opacity: 1, y: -8, scale: 1 }}
             exit={{ opacity: 0, y: 4, scale: 0.95 }}
             transition={{ duration: 0.15 }}
-            className="absolute -top-8 px-2.5 py-1 rounded-lg bg-zinc-900/95 text-white text-[11px] font-medium tracking-normal whitespace-nowrap shadow-lg pointer-events-none"
+            className="hidden sm:block absolute -top-8 px-2.5 py-1 rounded-lg bg-zinc-900/95 text-white text-[11px] font-medium tracking-normal whitespace-nowrap shadow-lg pointer-events-none"
           >
             {item.title}
             <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-zinc-900/95" />
@@ -189,16 +197,22 @@ function DockIcon({
     </motion.div>
   );
 
+  const wrapperClass = item.desktopOnly ? "hidden sm:inline-flex" : "inline-flex";
+
   if (item.href) {
     return (
-      <Link href={item.href} aria-label={item.title}>
+      <Link href={item.href} aria-label={item.title} className={wrapperClass}>
         {content}
       </Link>
     );
   }
 
   return (
-    <button onClick={item.onClick} aria-label={item.title} className="focus:outline-hidden">
+    <button
+      onClick={item.onClick}
+      aria-label={item.title}
+      className={`focus:outline-hidden ${wrapperClass}`}
+    >
       {content}
     </button>
   );

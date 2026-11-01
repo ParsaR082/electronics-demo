@@ -58,7 +58,7 @@ export default function QuickViewModal() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.94, y: 15 }}
             transition={{ type: "spring", damping: 25, stiffness: 220 }}
-            className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-black/10 overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row"
+            className="relative w-full max-w-4xl bg-white rounded-3xl shadow-2xl border border-black/10 overflow-y-auto md:overflow-hidden z-10 max-h-[90vh] flex flex-col md:flex-row"
           >
             {/* Close Button */}
             <button
@@ -70,7 +70,7 @@ export default function QuickViewModal() {
             </button>
 
             {/* Gallery Column (Left / Right in RTL) */}
-            <div className="md:w-1/2 p-6 bg-zinc-50/80 flex flex-col justify-between border-b md:border-b-0 md:border-l border-zinc-100">
+            <div className="md:w-1/2 p-4 sm:p-6 bg-zinc-50/80 flex flex-col justify-between border-b md:border-b-0 md:border-l border-zinc-100">
               {/* Main Image */}
               <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-white shadow-2xs mb-4">
                 <Image

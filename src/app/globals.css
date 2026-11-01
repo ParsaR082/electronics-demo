@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #faf9f6;
+  --color-secondary: #f3f1eb;
+  --color-accent: #ff5b00;
+  --color-accent-hover: #e04f00;
+  --color-surface-dark: #0b0b0e;
+  --font-sans: var(--font-vazirmatn), system-ui, -apple-system, sans-serif;
+}
+
 @layer base {
   :root {
     --bg-primary: #faf9f6;

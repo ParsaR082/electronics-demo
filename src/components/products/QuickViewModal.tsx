@@ -72,7 +72,7 @@ export default function QuickViewModal() {
             {/* Gallery Column (Left / Right in RTL) */}
             <div className="md:w-1/2 p-6 bg-zinc-50/80 flex flex-col justify-between border-b md:border-b-0 md:border-l border-zinc-100">
               {/* Main Image */}
-              <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden bg-white shadow-2xs mb-4">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-white shadow-2xs mb-4">
                 <Image
                   src={gallery[activeImageIndex] || product.image}
                   alt={product.name}

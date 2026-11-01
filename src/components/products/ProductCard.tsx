@@ -148,8 +148,8 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   return (
     <div className="group bg-white rounded-3xl p-4 border border-black/6 hover:border-[#FF5B00]/30 shadow-xs hover:shadow-xl transition-all duration-400 flex flex-col justify-between relative overflow-hidden h-full">
       {/* Top Image Container */}
-      <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden bg-zinc-100 mb-4">
-        <Link href={`/products/${product.slug}`} className="block w-full h-full">
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-zinc-100 mb-4">
+        <Link href={`/products/${product.slug}`} className="relative block w-full h-full">
           <Image
             src={product.image}
             alt={product.name}

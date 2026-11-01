@@ -96,7 +96,7 @@ export default function HeroSection() {
             className="lg:col-span-6 relative"
           >
             <TiltCard maxRotation={6} className="w-full">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-black/10 bg-[#0e0e12] aspect-16/11 group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-black/10 bg-[#0e0e12] aspect-[16/11] group">
                 {/* Hero Showcase Image */}
                 <Image
                   src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=85"

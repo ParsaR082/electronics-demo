@@ -323,7 +323,7 @@ export default function CartPage() {
                 </button>
               </div>
               {appliedCoupon && (
-                <span className="text-xs text-emerald-600 font-semibold block mt-1.5 flex items-center gap-1">
+                <span className="text-xs text-emerald-600 font-semibold mt-1.5 flex items-center gap-1">
                   <Check className="w-3.5 h-3.5" />
                   کد تخفیف {appliedCoupon} اعمال گردید (۵٪ کسر شد).
                 </span>
@@ -484,7 +484,7 @@ export default function CartPage() {
               /* Success Confirmation */
               <div className="text-center py-6 space-y-5">
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-md">
-                  <Check className="w-8 h-8 stroke-[3]" />
+                  <Check className="w-8 h-8 stroke-3" />
                 </div>
 
                 <div>

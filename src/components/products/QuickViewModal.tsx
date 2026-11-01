@@ -72,7 +72,7 @@ export default function QuickViewModal() {
             {/* Gallery Column (Left / Right in RTL) */}
             <div className="md:w-1/2 p-4 sm:p-6 bg-zinc-50/80 flex flex-col justify-between border-b md:border-b-0 md:border-l border-zinc-100">
               {/* Main Image */}
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-white shadow-2xs mb-4">
+              <div className="relative w-full aspect-4/3 rounded-2xl overflow-hidden bg-white shadow-2xs mb-4">
                 <Image
                   src={gallery[activeImageIndex] || product.image}
                   alt={product.name}
@@ -81,7 +81,7 @@ export default function QuickViewModal() {
                   className="object-cover transition-all duration-300"
                 />
                 {product.discount && (
-                  <span className="absolute top-3 right-3 bg-[#FF5B00] text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">
+                  <span className="absolute top-3 right-3 bg-accent text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">
                     {toPersianDigits(product.discount)}٪ تخفیف
                   </span>
                 )}
@@ -96,7 +96,7 @@ export default function QuickViewModal() {
                       onClick={() => setActiveImageIndex(idx)}
                       className={`relative w-16 h-16 rounded-xl overflow-hidden shrink-0 border-2 transition-all ${
                         activeImageIndex === idx
-                          ? "border-[#FF5B00] shadow-sm"
+                          ? "border-accent shadow-sm"
                           : "border-transparent opacity-70 hover:opacity-100"
                       }`}
                     >
@@ -118,7 +118,7 @@ export default function QuickViewModal() {
               <div>
                 {/* Brand & Category */}
                 <div className="flex items-center justify-between text-xs text-zinc-400 mb-2">
-                  <span className="text-[#FF5B00] font-extrabold tracking-wider">
+                  <span className="text-accent font-extrabold tracking-wider">
                     {product.brand}
                   </span>
                   <div className="flex items-center gap-1 text-amber-500 font-bold">
@@ -165,7 +165,7 @@ export default function QuickViewModal() {
                           onClick={() => setSelectedVariantIndex(idx)}
                           className={`flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all ${
                             selectedVariantIndex === idx
-                              ? "border-[#FF5B00] bg-[#FF5B00]/10 text-[#FF5B00]"
+                              ? "border-accent bg-accent/10 text-accent"
                               : "border-zinc-200 text-zinc-700 hover:border-zinc-300"
                           }`}
                         >
@@ -223,7 +223,7 @@ export default function QuickViewModal() {
                     className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-2xl text-sm font-bold transition-all shadow-md ${
                       isAdded
                         ? "bg-emerald-600 text-white"
-                        : "bg-[#0e0e12] hover:bg-[#FF5B00] text-white"
+                        : "bg-[#0e0e12] hover:bg-accent text-white"
                     }`}
                   >
                     {isAdded ? (
@@ -256,7 +256,7 @@ export default function QuickViewModal() {
                 <Link
                   href={`/products/${product.slug}`}
                   onClick={closeQuickView}
-                  className="flex items-center justify-center gap-1.5 text-xs font-semibold text-zinc-500 hover:text-[#FF5B00] transition-colors py-1"
+                  className="flex items-center justify-center gap-1.5 text-xs font-semibold text-zinc-500 hover:text-accent transition-colors py-1"
                 >
                   <span>مشاهده صفحه کامل و جدول مشخصات فنی</span>
                   <ExternalLink className="w-3.5 h-3.5" />

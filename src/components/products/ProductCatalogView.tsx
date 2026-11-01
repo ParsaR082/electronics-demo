@@ -521,7 +521,7 @@ export default function ProductCatalogView() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 220 }}
-              className="fixed top-0 bottom-0 right-0 w-[85%] max-w-[340px] bg-white shadow-2xl z-50 p-6 flex flex-col justify-between overflow-y-auto lg:hidden"
+              className="fixed top-0 bottom-0 right-0 w-[85%] max-w-85 bg-white shadow-2xl z-50 p-6 flex flex-col justify-between overflow-y-auto lg:hidden"
             >
               <div className="space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-zinc-100">

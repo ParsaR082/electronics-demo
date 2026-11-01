@@ -35,7 +35,7 @@ export default function WishlistPage() {
         </p>
         <Link
           href="/products"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-sm font-extrabold transition-all shadow-lg shadow-black/10"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-[#0e0e12] hover:bg-accent text-white text-sm font-extrabold transition-all shadow-lg shadow-black/10"
         >
           <span>مشاهده و مرور کاتالوگ</span>
           <ArrowLeft className="w-4 h-4" />
@@ -61,7 +61,7 @@ export default function WishlistPage() {
         <div className="flex items-center gap-3">
           <button
             onClick={handleAddAllToCart}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-xs font-bold transition-colors shadow-xs"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0e0e12] hover:bg-accent text-white text-xs font-bold transition-colors shadow-xs"
           >
             <ShoppingBag className="w-4 h-4" />
             <span>افزودن همه به سبد خرید</span>

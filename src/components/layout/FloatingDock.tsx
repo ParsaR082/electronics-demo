@@ -86,7 +86,7 @@ export default function FloatingDock() {
       icon: ShoppingBag,
       onClick: openCart,
       badge: cartCount,
-      badgeColor: "bg-[#FF5B00]",
+      badgeColor: "bg-accent",
       isActive: pathname === "/cart",
       desktopOnly: false,
     },
@@ -104,7 +104,7 @@ export default function FloatingDock() {
       <motion.nav
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
-        className="pointer-events-auto flex items-end gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-white/90 dark:bg-zinc-950/90 backdrop-blur-2xl border border-white/70 dark:border-white/10 shadow-[0_12px_32px_-4px_rgba(0,0,0,0.14)] ring-1 ring-black/5 max-w-[calc(100vw-20px)] sm:max-w-none overflow-visible"
+        className="pointer-events-auto flex items-end gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full bg-white/90 backdrop-blur-2xl border border-white/70 shadow-[0_12px_32px_-4px_rgba(0,0,0,0.14)] ring-1 ring-black/5 max-w-[calc(100vw-20px)] sm:max-w-none overflow-visible"
       >
         {dockItems.map((item) => (
           <DockIcon
@@ -166,8 +166,8 @@ function DockIcon({
       {/* Item badge for cart / wishlist */}
       {item.badge !== undefined && item.badge > 0 && (
         <span
-          className={`absolute -top-1 -left-1 min-w-[16px] sm:min-w-[18px] h-4 sm:h-[18px] px-1 rounded-full ${
-            item.badgeColor || "bg-[#FF5B00]"
+          className={`absolute -top-1 -left-1 min-w-4 sm:min-w-4.5 h-4 sm:h-4.5 px-1 rounded-full ${
+            item.badgeColor || "bg-accent"
           } text-white text-[9px] sm:text-[10px] font-extrabold flex items-center justify-center shadow-xs border-2 border-white`}
         >
           {toPersianDigits(item.badge)}
@@ -176,7 +176,7 @@ function DockIcon({
 
       {/* Active Dot Indicator */}
       {item.isActive && (
-        <span className="absolute -bottom-1 w-1 h-1 rounded-full bg-[#FF5B00]" />
+        <span className="absolute -bottom-1 w-1 h-1 rounded-full bg-accent" />
       )}
 
       {/* Persian Tooltip (Desktop only) */}

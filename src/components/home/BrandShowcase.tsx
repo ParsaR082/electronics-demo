@@ -102,9 +102,9 @@ export default function BrandShowcase() {
                 </p>
               </div>
 
-              <div className="pt-4 flex items-center justify-between text-[11px] font-bold text-zinc-400 group-hover:text-[#FF5B00] transition-colors mt-2">
+              <div className="pt-4 flex items-center justify-between text-[11px] font-bold text-zinc-400 group-hover:text-accent transition-colors mt-2">
                 <span>مشاهده محصولات {brand.persianName}</span>
-                <ArrowLeft className="w-3.5 h-3.5 group-hover:translate-x-[-3px] transition-transform" />
+                <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.75 transition-transform" />
               </div>
             </Link>
           ))}

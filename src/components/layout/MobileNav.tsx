@@ -46,7 +46,7 @@ export default function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavPr
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed top-0 bottom-0 right-0 w-[85%] max-w-[360px] bg-[#FAF9F6] shadow-2xl z-50 flex flex-col overflow-y-auto lg:hidden"
+            className="fixed top-0 bottom-0 right-0 w-[85%] max-w-90 bg-[#FAF9F6] shadow-2xl z-50 flex flex-col overflow-y-auto lg:hidden"
           >
             {/* Header */}
             <div className="p-5 border-b border-zinc-200/80 flex items-center justify-between bg-white">

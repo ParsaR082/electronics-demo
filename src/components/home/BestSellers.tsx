@@ -38,7 +38,7 @@ export default function BestSellers() {
           <div className="flex items-center gap-3">
             <Link
               href="/products?sort=popular"
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-zinc-600 hover:text-[#FF5B00] transition-colors ml-4"
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-zinc-600 hover:text-accent transition-colors ml-4"
             >
               <span>مشاهده تمام محبوب‌ترین‌ها</span>
               <ArrowLeft className="w-4 h-4" />
@@ -69,7 +69,7 @@ export default function BestSellers() {
           {bestSellerProducts.map((product) => (
             <div
               key={product.id}
-              className="w-[280px] sm:w-[320px] shrink-0 snap-start"
+              className="w-70 sm:w-80 shrink-0 snap-start"
             >
               <ProductCard product={product} />
             </div>

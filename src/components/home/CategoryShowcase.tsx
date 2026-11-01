@@ -51,7 +51,7 @@ export default function CategoryShowcase() {
               >
                 <Link
                   href={`/products?category=${cat.id}`}
-                  className="group relative block w-full h-[280px] sm:h-[320px] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-black/5 bg-[#0e0e12]"
+                  className="group relative block w-full h-70 sm:h-80 rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-black/5 bg-[#0e0e12]"
                 >
                   {/* Category Image */}
                   <Image
@@ -69,18 +69,18 @@ export default function CategoryShowcase() {
                   {/* Top Badge: Item Count & Icon */}
                   <div className="absolute top-5 right-5 left-5 flex items-center justify-between z-10">
                     <span className="glass-panel-dark px-3 py-1.5 rounded-full text-[11px] font-bold text-zinc-200 border border-white/10 flex items-center gap-1.5">
-                      <Icon className="w-3.5 h-3.5 text-[#FF5B00]" />
+                      <Icon className="w-3.5 h-3.5 text-accent" />
                       <span>{toPersianDigits(cat.itemCount)} محصول منتخب</span>
                     </span>
 
-                    <span className="w-9 h-9 rounded-full glass-panel-dark flex items-center justify-center text-white group-hover:bg-[#FF5B00] group-hover:scale-110 transition-all duration-300">
-                      <ArrowLeft className="w-4 h-4 group-hover:translate-x-[-2px] transition-transform" />
+                    <span className="w-9 h-9 rounded-full glass-panel-dark flex items-center justify-center text-white group-hover:bg-accent group-hover:scale-110 transition-all duration-300">
+                      <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
                     </span>
                   </div>
 
                   {/* Bottom Content */}
                   <div className="absolute bottom-5 right-5 left-5 z-10 text-white">
-                    <span className="text-[11px] text-[#FF5B00] font-black tracking-wide block mb-1">
+                    <span className="text-[11px] text-accent font-black tracking-wide block mb-1">
                       {cat.highlight}
                     </span>
                     <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#FF5B00] transition-colors mb-2">

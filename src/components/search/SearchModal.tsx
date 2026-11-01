@@ -89,7 +89,7 @@ export default function SearchModal() {
             >
               {/* Search Input Bar */}
               <div className="p-4 sm:p-5 border-b border-zinc-100 flex items-center gap-3">
-                <Search className="w-5 h-5 text-[#FF5B00] shrink-0" />
+                <Search className="w-5 h-5 text-accent shrink-0" />
                 <input
                   ref={inputRef}
                   type="text"
@@ -119,7 +119,7 @@ export default function SearchModal() {
                 {query.trim() === "" ? (
                   <div>
                     <div className="flex items-center gap-2 text-xs font-bold text-zinc-400 uppercase tracking-wider mb-3">
-                      <TrendingUp className="w-4 h-4 text-[#FF5B00]" />
+                      <TrendingUp className="w-4 h-4 text-accent" />
                       <span>جستجوهای پرطرفدار خریداران</span>
                     </div>
                     <div className="flex flex-wrap gap-2">
@@ -127,7 +127,7 @@ export default function SearchModal() {
                         <button
                           key={tag}
                           onClick={() => setQuery(tag)}
-                          className="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-[#FF5B00]/10 hover:text-[#FF5B00] text-zinc-700 text-xs font-medium transition-colors cursor-pointer"
+                          className="px-3 py-1.5 rounded-full bg-zinc-100 hover:bg-accent/10 hover:text-accent text-zinc-700 text-xs font-medium transition-colors cursor-pointer"
                         >
                           {tag}
                         </button>
@@ -157,20 +157,20 @@ export default function SearchModal() {
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 text-[11px] text-zinc-400 mb-0.5">
-                            <span className="text-[#FF5B00] font-bold">
+                            <span className="text-accent font-bold">
                               {product.brand}
                             </span>
                             <span>•</span>
                             <span>{product.categoryName}</span>
                           </div>
-                          <h4 className="text-xs sm:text-sm font-bold text-zinc-900 group-hover:text-[#FF5B00] transition-colors line-clamp-1">
+                          <h4 className="text-xs sm:text-sm font-bold text-zinc-900 group-hover:text-accent transition-colors line-clamp-1">
                             {product.name}
                           </h4>
                           <span className="text-xs font-bold text-zinc-950 block mt-0.5">
                             {formatPrice(product.price)}
                           </span>
                         </div>
-                        <ArrowLeft className="w-4 h-4 text-zinc-400 group-hover:text-[#FF5B00] group-hover:translate-x-[-3px] transition-all" />
+                        <ArrowLeft className="w-4 h-4 text-zinc-400 group-hover:text-accent group-hover:-translate-x-0.75 transition-all" />
                       </Link>
                     ))}
                   </div>

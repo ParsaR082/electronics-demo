@@ -82,7 +82,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
         {/* Left Column: Image Gallery (6 cols) */}
         <div className="lg:col-span-6 space-y-4">
           {/* Main Photo Container */}
-          <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden bg-white border border-zinc-200/80 shadow-md group">
+          <div className="relative w-full aspect-4/3 rounded-3xl overflow-hidden bg-white border border-zinc-200/80 shadow-md group">
             <Image
               src={gallery[activeImageIndex] || product.image}
               alt={product.name}

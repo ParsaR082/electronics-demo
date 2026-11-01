@@ -46,14 +46,14 @@ export default function AnnouncementBar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Side: Brand Slogan */}
         <div className="hidden lg:flex items-center gap-2 text-zinc-400">
-          <span className="w-2 h-2 rounded-full bg-[#FF5B00] animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
           <span className="font-medium text-zinc-300">AUREON Luxury Electronics</span>
           <span className="text-zinc-500">|</span>
           <span className="text-xs">شوروم دیجیتال صوتی و تصویری</span>
         </div>
 
         {/* Center: Rotating Announcement */}
-        <div className="flex-1 flex items-center justify-center relative min-h-[22px] px-2">
+        <div className="flex-1 flex items-center justify-center relative min-h-5.5 px-2">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -63,7 +63,7 @@ export default function AnnouncementBar() {
               transition={{ duration: 0.35 }}
               className="flex items-center gap-2 text-center text-zinc-200"
             >
-              <IconComponent className="w-4 h-4 text-[#FF5B00] shrink-0" />
+              <IconComponent className="w-4 h-4 text-accent shrink-0" />
               <span className="font-medium">{current.text}</span>
             </motion.div>
           </AnimatePresence>

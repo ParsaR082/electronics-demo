@@ -15,10 +15,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-between pt-6 sm:pt-12 pb-8 overflow-hidden bg-radial from-amber-500/5 via-transparent to-transparent">
-      {/* Background Subtle Luxury Lighting */}
-      <div className="absolute top-10 right-10 w-96 h-96 bg-[#FF5B00]/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-20 left-10 w-80 h-80 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+    <section className="relative min-h-[90vh] flex flex-col justify-between pt-6 sm:pt-12 pb-8 overflow-hidden bg-[#FAF9F6]">
+      {/* Background Subtle Luxury Lighting using native CSS radial gradient (zero blur GPU tile glitch on iOS) */}
+      <div className="absolute top-10 right-10 w-96 h-96 rounded-full bg-[radial-gradient(circle,rgba(255,91,0,0.12)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute bottom-20 left-10 w-80 h-80 rounded-full bg-[radial-gradient(circle,rgba(59,130,246,0.06)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10 flex-1 flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -31,15 +31,15 @@ export default function HeroSection() {
           >
             {/* Top Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-zinc-200/80 shadow-xs text-xs font-semibold text-zinc-800">
-              <span className="w-2 h-2 rounded-full bg-[#FF5B00] animate-ping" />
+              <span className="w-2 h-2 rounded-full bg-accent animate-ping" />
               <span>معرفی نسل جدید پرچمداران صوتی و تصویری ۲۰۲۶</span>
-              <Sparkles className="w-3.5 h-3.5 text-[#FF5B00]" />
+              <Sparkles className="w-3.5 h-3.5 text-accent" />
             </div>
 
             {/* Editorial Persian Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-zinc-950 tracking-tight leading-[1.2]">
               خانه‌ات را به دنیای{" "}
-              <span className="relative inline-block text-transparent bg-clip-text bg-linear-to-l from-[#FF5B00] via-amber-500 to-rose-600">
+              <span className="relative inline-block text-transparent bg-clip-text bg-linear-to-l from-accent via-amber-500 to-rose-600 [-webkit-background-clip:text]">
                 صدا و تصویر
               </span>{" "}
               تبدیل کن
@@ -54,17 +54,17 @@ export default function HeroSection() {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href="/products"
-                className="group flex items-center gap-3 px-7 py-4 rounded-2xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-sm font-bold shadow-xl shadow-black/10 hover:shadow-[#FF5B00]/25 transition-all duration-300 transform hover:-translate-y-0.5"
+                className="group flex items-center gap-3 px-7 py-4 rounded-2xl bg-[#0e0e12] hover:bg-accent text-white text-sm font-bold shadow-xl shadow-black/10 hover:shadow-accent/25 transition-all duration-300 transform hover:-translate-y-0.5"
               >
                 <span>مشاهده محصولات</span>
-                <ArrowLeft className="w-4 h-4 group-hover:translate-x-[-4px] transition-transform" />
+                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
               </Link>
 
               <button
                 onClick={toggleSoundDemo}
                 className="flex items-center gap-3 px-6 py-4 rounded-2xl bg-white hover:bg-zinc-100 text-zinc-900 border border-zinc-200 text-sm font-bold shadow-xs transition-colors"
               >
-                <div className={`w-6 h-6 rounded-full flex items-center justify-center ${isPlayingAudio ? "bg-[#FF5B00] text-white animate-pulse" : "bg-zinc-100 text-[#FF5B00]"}`}>
+                <div className={`w-6 h-6 rounded-full flex items-center justify-center ${isPlayingAudio ? "bg-accent text-white animate-pulse" : "bg-zinc-100 text-accent"}`}>
                   {isPlayingAudio ? <Volume2 className="w-3.5 h-3.5" /> : <Play className="w-3 h-3 ml-0.5 fill-current" />}
                 </div>
                 <span>{isPlayingAudio ? "پخش آکوستیک فعال شد" : "دموی صدای فضایی"}</span>
@@ -74,15 +74,15 @@ export default function HeroSection() {
             {/* Key Advantages Tags */}
             <div className="pt-4 grid grid-cols-3 gap-3 border-t border-zinc-200/70 max-w-lg">
               <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700">
-                <CheckCircle className="w-4 h-4 text-[#FF5B00] shrink-0" />
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
                 <span>۲۴ ماه گارانتی زرین</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700">
-                <CheckCircle className="w-4 h-4 text-[#FF5B00] shrink-0" />
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
                 <span>ارسال رایگان بیمه‌شده</span>
               </div>
               <div className="flex items-center gap-2 text-xs font-semibold text-zinc-700">
-                <CheckCircle className="w-4 h-4 text-[#FF5B00] shrink-0" />
+                <CheckCircle className="w-4 h-4 text-accent shrink-0" />
                 <span>کالیبراسیون رایگان</span>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function HeroSection() {
             className="lg:col-span-6 relative"
           >
             <TiltCard maxRotation={6} className="w-full">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-black/10 bg-[#0e0e12] aspect-[16/11] group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-black/10 bg-[#0e0e12] aspect-16/11 group">
                 {/* Hero Showcase Image */}
                 <Image
                   src="/images/products/sony-bravia-xr-a95l-65.webp"
@@ -121,7 +121,7 @@ export default function HeroSection() {
 
                 <div className="absolute bottom-5 right-5 left-5 z-20 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-3 text-white">
                   <div>
-                    <span className="text-[11px] text-[#FF5B00] font-black uppercase tracking-wider block mb-1">
+                    <span className="text-[11px] text-accent font-black uppercase tracking-wider block mb-1">
                       سونی سری پرچمدار BRAVIA XR
                     </span>
                     <h3 className="text-lg sm:text-xl font-black leading-tight text-white">
@@ -131,7 +131,7 @@ export default function HeroSection() {
 
                   <Link
                     href="/products/sony-bravia-xr-a95l-65"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/20 hover:bg-[#FF5B00] text-white backdrop-blur-md text-xs font-bold transition-colors"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/20 hover:bg-accent text-white backdrop-blur-md text-xs font-bold transition-colors"
                   >
                     <span>مشاهده جزئیات</span>
                     <ArrowLeft className="w-3.5 h-3.5" />
@@ -145,7 +145,7 @@ export default function HeroSection() {
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-6 glass-panel p-3.5 sm:p-4 rounded-3xl shadow-xl border border-white/80 max-w-[240px] sm:max-w-[270px] hidden sm:flex items-center gap-3.5 z-30"
+              className="absolute -bottom-6 -right-4 sm:-bottom-8 sm:-right-6 glass-panel p-3.5 sm:p-4 rounded-3xl shadow-xl border border-white/80 max-w-60 sm:max-w-67.5 hidden sm:flex items-center gap-3.5 z-30"
             >
               <div className="relative w-14 h-14 rounded-2xl overflow-hidden bg-zinc-900 shrink-0">
                 <Image
@@ -157,7 +157,7 @@ export default function HeroSection() {
                 />
               </div>
               <div>
-                <span className="text-[10px] text-[#FF5B00] font-extrabold block">
+                <span className="text-[10px] text-accent font-extrabold block">
                   دالبی اتموس ۷.۱.۲
                 </span>
                 <h4 className="text-xs font-bold text-zinc-900 line-clamp-1">

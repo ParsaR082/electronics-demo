@@ -95,7 +95,7 @@ export default function CartPage() {
         </p>
         <Link
           href="/products"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-sm font-extrabold transition-all shadow-lg shadow-black/10"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-[#0e0e12] hover:bg-accent text-white text-sm font-extrabold transition-all shadow-lg shadow-black/10"
         >
           <span>مشاهده و خرید محصولات</span>
           <ArrowLeft className="w-4 h-4" />
@@ -120,7 +120,7 @@ export default function CartPage() {
       <div className="p-4 rounded-2xl bg-white border border-zinc-200/80 shadow-2xs mb-8">
         <div className="flex items-center justify-between text-xs mb-2">
           <span className="flex items-center gap-2 font-bold text-zinc-800">
-            <Truck className="w-4 h-4 text-[#FF5B00]" />
+            <Truck className="w-4 h-4 text-accent" />
             {remainingForFreeShipping === 0 ? (
               <span className="text-emerald-600 flex items-center gap-1">
                 <CheckCircle2 className="w-4 h-4" />
@@ -129,7 +129,7 @@ export default function CartPage() {
             ) : (
               <span>
                 تنها{" "}
-                <strong className="text-[#FF5B00]">
+                <strong className="text-accent">
                   {formatPrice(remainingForFreeShipping)}
                 </strong>{" "}
                 تا ارسال کاملاً رایگان در سراسر ایران
@@ -143,7 +143,7 @@ export default function CartPage() {
         <div className="w-full h-2 bg-zinc-100 rounded-full overflow-hidden">
           <div
             style={{ width: `${progressPercent}%` }}
-            className="h-full bg-linear-to-r from-[#FF5B00] to-amber-400 rounded-full transition-all duration-500"
+            className="h-full bg-linear-to-r from-accent to-amber-400 rounded-full transition-all duration-500"
           />
         </div>
       </div>
@@ -179,7 +179,7 @@ export default function CartPage() {
                 <div className="flex-1 min-w-0 w-full flex flex-col justify-between">
                   <div>
                     <div className="flex items-center justify-between gap-2 mb-1">
-                      <span className="text-[11px] font-bold text-[#FF5B00]">
+                      <span className="text-[11px] font-bold text-accent">
                         {item.product.brand}
                       </span>
                       <button
@@ -195,7 +195,7 @@ export default function CartPage() {
 
                     <Link
                       href={`/products/${item.product.slug}`}
-                      className="text-sm font-bold text-zinc-900 hover:text-[#FF5B00] transition-colors line-clamp-1 block mb-1"
+                      className="text-sm font-bold text-zinc-900 hover:text-accent transition-colors line-clamp-1 block mb-1"
                     >
                       {item.product.name}
                     </Link>
@@ -295,7 +295,7 @@ export default function CartPage() {
 
               <div className="pt-3 border-t border-zinc-200 flex justify-between items-baseline text-zinc-950">
                 <span className="font-bold text-sm">مبلغ نهایی قابل پرداخت:</span>
-                <span className="text-xl font-black text-[#FF5B00]">
+                <span className="text-xl font-black text-accent">
                   {formatPrice(finalPayable)}
                 </span>
               </div>
@@ -312,12 +312,12 @@ export default function CartPage() {
                   value={couponCode}
                   onChange={(e) => setCouponCode(e.target.value)}
                   placeholder="کد تخفیف (مثال: AUREON)"
-                  className="flex-1 px-3 py-2.5 rounded-xl bg-zinc-50 border border-zinc-200 text-xs font-medium focus:outline-hidden focus:border-[#FF5B00] uppercase font-mono"
+                  className="flex-1 px-3 py-2.5 rounded-xl bg-zinc-50 border border-zinc-200 text-xs font-medium focus:outline-hidden focus:border-accent uppercase font-mono"
                   dir="ltr"
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-[#FF5B00] text-white text-xs font-bold transition-colors"
+                  className="px-4 py-2.5 rounded-xl bg-zinc-900 hover:bg-accent text-white text-xs font-bold transition-colors"
                 >
                   اعمال
                 </button>
@@ -338,7 +338,7 @@ export default function CartPage() {
             {/* Checkout CTA Button */}
             <button
               onClick={handleStartCheckout}
-              className="w-full py-4 rounded-2xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-sm font-extrabold flex items-center justify-center gap-2 transition-all duration-300 shadow-xl shadow-black/10"
+              className="w-full py-4 rounded-2xl bg-[#0e0e12] hover:bg-accent text-white text-sm font-extrabold flex items-center justify-center gap-2 transition-all duration-300 shadow-xl shadow-black/10"
             >
               <span>ادامه فرایند خرید و ثبت سفارش</span>
               <ArrowLeft className="w-4 h-4" />
@@ -348,7 +348,7 @@ export default function CartPage() {
           {/* Safe Purchase Guarantee */}
           <div className="p-4 rounded-2xl bg-zinc-50 border border-zinc-200/80 text-xs text-zinc-500 space-y-2">
             <div className="flex items-center gap-2 text-zinc-800 font-bold">
-              <ShieldCheck className="w-4 h-4 text-[#FF5B00]" />
+              <ShieldCheck className="w-4 h-4 text-accent" />
               <span>خرید امن و مطمئن در آئورئون</span>
             </div>
             <p className="leading-relaxed">
@@ -370,7 +370,7 @@ export default function CartPage() {
             {!isOrderPlaced ? (
               <div className="space-y-6">
                 <div>
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-[#FF5B00] mb-1">
+                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-accent mb-1">
                     <Sparkles className="w-3.5 h-3.5" />
                     <span>تکمیل سفارش دمو</span>
                   </div>
@@ -420,17 +420,17 @@ export default function CartPage() {
                     onClick={() => setSelectedPayment("gateway")}
                     className={`w-full flex items-center justify-between p-3.5 rounded-2xl border text-xs font-bold transition-all ${
                       selectedPayment === "gateway"
-                        ? "border-[#FF5B00] bg-[#FF5B00]/5 text-zinc-950"
+                        ? "border-accent bg-accent/5 text-zinc-950"
                         : "border-zinc-200 hover:border-zinc-300 text-zinc-700"
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <CreditCard className="w-5 h-5 text-[#FF5B00]" />
+                      <CreditCard className="w-5 h-5 text-accent" />
                       <span>پرداخت اینترنتی با کلیه کارت‌های عضو شتاب</span>
                     </div>
-                    <span className="w-4 h-4 rounded-full border-2 border-[#FF5B00] flex items-center justify-center">
+                    <span className="w-4 h-4 rounded-full border-2 border-accent flex items-center justify-center">
                       {selectedPayment === "gateway" && (
-                        <span className="w-2 h-2 rounded-full bg-[#FF5B00]" />
+                        <span className="w-2 h-2 rounded-full bg-accent" />
                       )}
                     </span>
                   </button>
@@ -440,7 +440,7 @@ export default function CartPage() {
                     onClick={() => setSelectedPayment("installments")}
                     className={`w-full flex items-center justify-between p-3.5 rounded-2xl border text-xs font-bold transition-all ${
                       selectedPayment === "installments"
-                        ? "border-[#FF5B00] bg-[#FF5B00]/5 text-zinc-950"
+                        ? "border-accent bg-accent/5 text-zinc-950"
                         : "border-zinc-200 hover:border-zinc-300 text-zinc-700"
                     }`}
                   >
@@ -450,7 +450,7 @@ export default function CartPage() {
                     </div>
                     <span className="w-4 h-4 rounded-full border-2 border-zinc-300 flex items-center justify-center">
                       {selectedPayment === "installments" && (
-                        <span className="w-2 h-2 rounded-full bg-[#FF5B00]" />
+                        <span className="w-2 h-2 rounded-full bg-accent" />
                       )}
                     </span>
                   </button>
@@ -459,7 +459,7 @@ export default function CartPage() {
                 {/* Final Total in Modal */}
                 <div className="p-4 rounded-2xl bg-zinc-50 flex items-center justify-between text-xs">
                   <span className="font-bold text-zinc-600">مبلغ قابل تسویه:</span>
-                  <span className="text-base font-black text-[#FF5B00]">
+                  <span className="text-base font-black text-accent">
                     {formatPrice(finalPayable)}
                   </span>
                 </div>
@@ -468,7 +468,7 @@ export default function CartPage() {
                 <div className="flex items-center gap-3 pt-2">
                   <button
                     onClick={handleConfirmOrder}
-                    className="flex-1 py-3.5 rounded-2xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-xs font-extrabold transition-colors shadow-lg"
+                    className="flex-1 py-3.5 rounded-2xl bg-[#0e0e12] hover:bg-accent text-white text-xs font-extrabold transition-colors shadow-lg"
                   >
                     تایید نهایی و پرداخت آزمایشی
                   </button>
@@ -518,7 +518,7 @@ export default function CartPage() {
                       setIsCheckoutModalOpen(false);
                       setIsOrderPlaced(false);
                     }}
-                    className="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl bg-[#0e0e12] hover:bg-[#FF5B00] text-white text-xs font-bold transition-colors shadow-md"
+                    className="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl bg-[#0e0e12] hover:bg-accent text-white text-xs font-bold transition-colors shadow-md"
                   >
                     <span>ادامه خرید در کاتالوگ آئورئون</span>
                     <ArrowLeft className="w-4 h-4" />

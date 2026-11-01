@@ -1,1 +1,112 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #faf9f6;
+    --bg-secondary: #f3f1eb;
+    --bg-surface: #ffffff;
+    --bg-dark: #0b0b0e;
+    --bg-dark-surface: #141418;
+    --text-primary: #121216;
+    --text-secondary: #585864;
+    --text-muted: #888896;
+    --accent: #ff5b00;
+    --accent-hover: #e04f00;
+    --accent-glow: rgba(255, 91, 0, 0.25);
+    --border-light: rgba(0, 0, 0, 0.07);
+    --border-dark: rgba(255, 255, 255, 0.09);
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+    text-align: right;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    font-feature-settings: "ss01", "ss02", "ss03";
+  }
+
+  /* Custom Premium Scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f0eb;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d4d0c7;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b8b3a8;
+  }
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-panel-dark {
+  background: rgba(18, 18, 22, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Floating Dock Glow */
+.dock-glow {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15), 0 0 20px 0 rgba(255, 91, 0, 0.08);
+}
+
+/* Luxury card glow effect */
+.card-hover-glow {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-glow:hover {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08), 0 0 30px -10px var(--accent-glow);
+  transform: translateY(-4px);
+}
+
+/* Subtle Shimmer for Skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-effect {
+  background: linear-gradient(
+    90deg,
+    rgba(240, 238, 233, 0.6) 25%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(240, 238, 233, 0.6) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}

@@ -99,7 +99,7 @@ export default function HeroSection() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-black/10 bg-[#0e0e12] aspect-[16/11] group">
                 {/* Hero Showcase Image */}
                 <Image
-                  src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=85"
+                  src="/images/products/sony-bravia-xr-a95l-65.webp"
                   alt="Sony Bravia QD-OLED Flagship"
                   fill
                   priority
@@ -149,7 +149,7 @@ export default function HeroSection() {
             >
               <div className="relative w-14 h-14 rounded-2xl overflow-hidden bg-zinc-900 shrink-0">
                 <Image
-                  src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=200&q=80"
+                  src="/images/categories/speakers-audio.webp"
                   alt="Sony Soundbar"
                   fill
                   sizes="60px"

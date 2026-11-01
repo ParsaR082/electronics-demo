@@ -74,7 +74,7 @@ export default function ProductStorytelling() {
         {/* Large Cinematic Product Display */}
         <div className="relative w-full aspect-video sm:aspect-[21/9] rounded-3xl overflow-hidden border border-white/10 bg-zinc-950 shadow-2xl mb-12 group">
           <Image
-            src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1600&q=85"
+            src="/images/products/sony-bravia-xr-a95l-65.webp"
             alt="Sony Bravia XR Master Series"
             fill
             sizes="100vw"

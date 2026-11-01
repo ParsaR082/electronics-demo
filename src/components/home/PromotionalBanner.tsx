@@ -130,7 +130,7 @@ export default function PromotionalBanner() {
             {/* Product Visual */}
             <div className="relative w-72 h-44 rounded-2xl overflow-hidden border border-white/10 shadow-lg hidden sm:block">
               <Image
-                src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80"
+                src="/images/promo/promo-soundbar.webp"
                 alt="Sony Home Cinema Promo"
                 fill
                 sizes="300px"

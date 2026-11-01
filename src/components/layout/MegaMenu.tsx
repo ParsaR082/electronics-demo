@@ -105,7 +105,7 @@ export default function MegaMenu({ onClose }: MegaMenuProps) {
 
           <div className="relative w-full h-40 rounded-2xl overflow-hidden my-2 bg-zinc-900 border border-white/10">
             <Image
-              src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80"
+              src="/images/promo/megamenu-featured.webp"
               alt="Sony Bravia A95L"
               fill
               sizes="300px"

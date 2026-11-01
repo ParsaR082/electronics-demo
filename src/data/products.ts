@@ -1,0 +1,1195 @@
+import { Product } from "@/types/product";
+
+export const PRODUCTS: Product[] = [
+  // 1. Sony Bravia XR OLED A95L
+  {
+    id: "sony-bravia-xr-a95l-65",
+    slug: "sony-bravia-xr-a95l-65",
+    name: "تلویزیون اولد ۶۵ اینچ سونی مدل BRAVIA XR A95L QD-OLED",
+    englishName: "Sony BRAVIA XR 65-inch A95L QD-OLED 4K HDR TV",
+    brand: "Sony",
+    category: "tv-displays",
+    categoryName: "تلویزیون و نمایشگر",
+    price: 184500000,
+    originalPrice: 198000000,
+    discount: 7,
+    rating: 4.9,
+    reviewCount: 38,
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1577979749830-f1d742b96791?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "شاهکار سونی در فناوری QD-OLED با پردازنده شناختی Cognitive Processor XR. روشنایی تا ۲۰۰٪ فراتر از اولدهای سنتی، مشکی خالص بی‌نقص، سیستم صوتی ارتعاشی Acoustic Surface Audio+ و پشتیبانی کامل از گیمینگ با HDMI 2.1 و ۴K ۱۲۰Hz.",
+    shortDescription: "پرچمدار نمایشگرهای جهان با پنل QD-OLED و پردازنده شناختی XR",
+    stock: 5,
+    featured: true,
+    bestseller: true,
+    badge: "پرچمدار سونی",
+    specsHighlights: [
+      { label: "پنل تصویر", value: "QD-OLED 4K HDR" },
+      { label: "نرخ نوسازی", value: "۱۲۰ هرتز VRR" },
+      { label: "سیستم صوتی", value: "Acoustic Surface 60W" },
+      { label: "پردازنده", value: "Cognitive Processor XR" },
+    ],
+    specifications: [
+      {
+        group: "تصویر و نمایشگر",
+        items: [
+          { label: "نوع پنل", value: "QD-OLED با فناوری دات کوانتومی" },
+          { label: "رزولوشن", value: "3840 x 2160 (4K UHD)" },
+          { label: "فناوری HDR", value: "Dolby Vision, HDR10, HLG" },
+          { label: "رفرش ریت", value: "120Hz متغیر (VRR)" },
+        ],
+      },
+      {
+        group: "سیستم صوتی",
+        items: [
+          { label: "خروجی صدا", value: "۶۰ وات، ۳.۲ کاناله" },
+          { label: "تکنولوژی صوتی", value: "Dolby Atmos, DTS:X, Acoustic Surface Audio+" },
+        ],
+      },
+      {
+        group: "اتصالات و هوشمندی",
+        items: [
+          { label: "سیستم عامل", value: "Google TV با رابط فارسی روان" },
+          { label: "پورت‌ها", value: "۴ پورت HDMI (شامل ۲ پورت HDMI 2.1)، ۲ پورت USB، بلوتوث ۵.۲" },
+          { label: "گارانتی", value: "۲۴ ماه گارانتی زرین آروند + ضمانت تعویض پنل" },
+        ],
+      },
+    ],
+    features: [
+      "روشنایی دو برابری به لطف لایه کوانتوم دات",
+      "صدایی که مستقیم از خود صفحه نمایش پرتاب می‌شود",
+      "بهینه‌سازی اختصاصی برای پلی‌استیشن ۵ (Auto HDR Tone Mapping)",
+      "پوشش ضد بازتابش نور در اتاق‌های پرنور",
+    ],
+    variants: [
+      { id: "65-inch", name: "۶۵ اینچ", inStock: true },
+      { id: "77-inch", name: "۷۷ اینچ", priceModifier: 65000000, inStock: true },
+      { id: "55-inch", name: "۵۵ اینچ", priceModifier: -35000000, inStock: false },
+    ],
+  },
+
+  // 2. Samsung Neo QLED QN90C 75"
+  {
+    id: "samsung-neo-qled-qn90c-75",
+    slug: "samsung-neo-qled-qn90c-75",
+    name: "تلویزیون سامسونگ ۷۵ اینچ Neo QLED مدل QN90C با هوش مصنوعی",
+    englishName: "Samsung 75-inch Neo QLED 4K QN90C Smart TV",
+    brand: "Samsung",
+    category: "tv-displays",
+    categoryName: "تلویزیون و نمایشگر",
+    price: 142000000,
+    originalPrice: 154000000,
+    discount: 8,
+    rating: 4.8,
+    reviewCount: 42,
+    image: "https://images.unsplash.com/photo-1577979749830-f1d742b96791?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1577979749830-f1d742b96791?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "نمایشگر نئو کیولد سامسونگ با مینی ال‌ای‌دی‌های کوانتومی Quantum Mini LED. کنتراست فوق‌العاده عمیق، بیش از ۱۰۰۰ نیت روشنایی، پردازنده عصبی Neural Quantum Processor 4K و زاویه دید فوق عریض Ultra Viewing Angle.",
+    shortDescription: "فناوری Quantum Mini LED با نرخ نوسازی ۱۴۴ هرتز و صدای ردیابی شیء",
+    stock: 8,
+    featured: true,
+    bestseller: false,
+    badge: "فوق عریض",
+    specsHighlights: [
+      { label: "نور پس‌زمینه", value: "Quantum Mini LED" },
+      { label: "نرخ نوسازی", value: "۱۴۴ هرتز بازی" },
+      { label: "پردازش هوشمند", value: "Neural Quantum 4K" },
+      { label: "صوت فراگیر", value: "OTS+ با ۶۰ وات توان" },
+    ],
+    specifications: [
+      {
+        group: "تصویر",
+        items: [
+          { label: "سایز صفحه", value: "۷۵ اینچ بدون حاشیه NeoSlim" },
+          { label: "رزولوشن", value: "3840 x 2160" },
+          { label: "فناوری رنگ", value: "۱۰۰٪ حجم رنگ با کوانتوم دات" },
+        ],
+      },
+      {
+        group: "ویژگی‌های گیمینگ",
+        items: [
+          { label: "FreeSync", value: "AMD FreeSync Premium Pro" },
+          { label: "Game Bar", value: "Game Bar 3.0 با تاخیر ورودی ۵ میلی‌ثانیه" },
+        ],
+      },
+    ],
+    features: [
+      "هزاران نقطه نوری مینی ال‌ای‌دی برای کنترل موضعی نور بدون هاله",
+      "پوشش مات ضد انعکاس برای سالن‌های با پنجره بزرگ",
+      "طراحی یکپارچه فوق باریک کمتر از ۲.۵ سانتی‌متر ضخامت",
+    ],
+    variants: [
+      { id: "75-inch", name: "۷۵ اینچ", inStock: true },
+      { id: "65-inch", name: "۶۵ اینچ", priceModifier: -32000000, inStock: true },
+      { id: "85-inch", name: "۸۵ اینچ", priceModifier: 55000000, inStock: true },
+    ],
+  },
+
+  // 3. LG OLED evo G3 65"
+  {
+    id: "lg-oled-evo-g3-65",
+    slug: "lg-oled-evo-g3-65",
+    name: "تلویزیون ۶۵ اینچ ال‌جی مدل OLED evo G3 طراحی گالری",
+    englishName: "LG 65-inch OLED evo G3 Gallery Edition 4K TV",
+    brand: "LG",
+    category: "tv-displays",
+    categoryName: "تلویزیون و نمایشگر",
+    price: 159000000,
+    originalPrice: 172000000,
+    discount: 8,
+    rating: 4.9,
+    reviewCount: 51,
+    image: "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "باریک‌ترین و زیباترین تلویزیون سال با تکنولوژی لنزهای میکروسکوپی Brightness Booster Max برای ۷۰٪ روشنایی بالاتر. نصب کاملاً تخت بدون فاصله با دیوار مانند تابلوی نقاشی در موزه.",
+    shortDescription: "فناوری Micro Lens Array با ۷۰٪ درخشش بیشتر و گارانتی ۵ ساله پنل",
+    stock: 6,
+    featured: true,
+    bestseller: true,
+    badge: "طراحی گالری",
+    specsHighlights: [
+      { label: "تکنولوژی پنل", value: "OLED evo MLA" },
+      { label: "پردازشگر", value: "α9 Gen6 AI Processor 4K" },
+      { label: "نصب دیواری", value: "Zero Gap Wall Mount" },
+      { label: "صدا", value: "Dolby Atmos 9.1.2 مجازی" },
+    ],
+    specifications: [
+      {
+        group: "نمایشگر",
+        items: [
+          { label: "فناوری لنز", value: "Micro Lens Array (MLA)" },
+          { label: "روشنایی قله", value: "بیش از ۱۵۰۰ نیت" },
+          { label: "پشتیبانی بازی", value: "G-Sync, FreeSync, 4x HDMI 2.1 48Gbps" },
+        ],
+      },
+    ],
+    features: [
+      "نصب صفر میلیمتر فاصله با دیوار",
+      "روشنایی شگفت‌انگیز با میلیاردها لنز میکروسکوپی",
+      "سیستم عامل webOS 23 با کارت‌های هوشمند محتوا",
+    ],
+  },
+
+  // 4. Philips Ambilight OLED 808 65"
+  {
+    id: "philips-ambilight-oled-808-65",
+    slug: "philips-ambilight-oled-808-65",
+    name: "تلویزیون اولد ۶۵ اینچ فیلیپس سری Ambilight مدل OLED808",
+    englishName: "Philips 65-inch 4K OLED Ambilight Smart TV 808",
+    brand: "Philips",
+    category: "tv-displays",
+    categoryName: "تلویزیون و نمایشگر",
+    price: 119000000,
+    originalPrice: 129000000,
+    discount: 8,
+    rating: 4.7,
+    reviewCount: 23,
+    image: "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1461151304267-38535e780c79?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "تجربه تماشای غرق‌کننده با نورپردازی هوشمند ۴ طرفه Ambilight که تصویر صفحه را به دیوارهای اتاق تعمیم می‌دهد. مجهز به پردازشگر هوش مصنوعی نسل هفتم P5 AI Perfect Picture Engine و سیستم صوتی ساب‌ووفر داخلی.",
+    shortDescription: "نورپردازی جادویی ۴ طرفه هماهنگ با تصویر و پردازنده P5 AI",
+    stock: 4,
+    featured: false,
+    bestseller: false,
+    badge: "نورپردازی امبیلایت",
+    specsHighlights: [
+      { label: "نور محیطی", value: "Next Gen 4-Sided Ambilight" },
+      { label: "پردازش تصویر", value: "P5 AI Perfect Engine" },
+      { label: "رفرش ریت", value: "۱۲۰ هرتز با G-Sync" },
+      { label: "توان ساب‌ووفر", value: "ساب‌ووفر داخلی ۳۰ وات" },
+    ],
+    specifications: [
+      {
+        group: "فناوری نورپردازی",
+        items: [
+          { label: "نسل امبیلایت", value: "۴ طرفه با کنترل رنگ تک‌به‌تک ال‌ای‌دی‌ها" },
+          { label: "سیستم عامل", value: "Google TV با دستیار صوتی" },
+        ],
+      },
+    ],
+    features: [
+      "گسترش نور متناسب با محتوای فیلم و بازی به دیوار پشت تلویزیون",
+      "بلندگوهای یکپارچه پشت پنل با بیس عمیق",
+      "کنترل از راه دور چرمی لوکس با نور پس‌زمینه کلیدها",
+    ],
+  },
+
+  // 5. Sony HT-A7000 7.1.2 Flagship Soundbar
+  {
+    id: "sony-ht-a7000-soundbar",
+    slug: "sony-ht-a7000-soundbar",
+    name: "ساندبار پرچمدار سونی مدل HT-A7000 با صدای ۷.۱.۲ کاناله Dolby Atmos",
+    englishName: "Sony HT-A7000 7.1.2ch Flagship Dolby Atmos Soundbar",
+    brand: "Sony",
+    category: "speakers-audio",
+    categoryName: "اسپیکر و ساندبار",
+    price: 68500000,
+    originalPrice: 74000000,
+    discount: 7,
+    rating: 4.9,
+    reviewCount: 64,
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "بهترین ساندبار صوتی سونی با فناوری 360 Spatial Sound Mapping و درایورهای بالاپرتاب و کناره‌پرتاب فیزیکی. صدای فراگیر سه‌بعدی واقعی با حس حضور در وسط صحنه فیلم‌های هالیوودی.",
+    shortDescription: "توان ۵۰۰ وات واقعی، پرتاب عمودی سقف، پشتیبانی از Hi-Res و eARC",
+    stock: 9,
+    featured: true,
+    bestseller: true,
+    badge: "صدای سه‌بعدی",
+    specsHighlights: [
+      { label: "تعداد کانال", value: "۷.۱.۲ فیزیکی" },
+      { label: "توان خروجی", value: "۵۰۰ وات RMS" },
+      { label: "فرمت‌های صوتی", value: "Dolby Atmos, DTS:X, 360 Reality Audio" },
+      { label: "پاسپورت تصویری", value: "8K HDR & 4K 120Hz Passthrough" },
+    ],
+    specifications: [
+      {
+        group: "مشخصات آکوستیک",
+        items: [
+          { label: "درایورها", value: "۲ توییتر Beam، ۲ اسپیکر بالازن، ساب‌ووفر دوگانه داخلی" },
+          { label: "کالیبراسیون", value: "Sound Field Optimization هوشمند بر اساس ابعاد اتاق" },
+        ],
+      },
+      {
+        group: "درگاه‌ها",
+        items: [
+          { label: "HDMI", value: "۲ ورودی HDMI 2.1 و ۱ خروجی eARC" },
+          { label: "اتصال بی‌سیم", value: "Wi-Fi, Bluetooth 5.0, AirPlay 2, Spotify Connect" },
+        ],
+      },
+    ],
+    features: [
+      "کالیبره‌سازی خودکار آکوستیک اتاق با میکروفون داخلی",
+      "قابلیت اتصال بی‌سیم به ساب‌ووفر و اسپیکرهای عقب سونی",
+      "هماهنگی با تلویزیون‌های براویا جهت استفاده از اسپیکر تلویزیون به عنوان کانال مرکزی (Acoustic Center Sync)",
+    ],
+  },
+
+  // 6. JBL PartyBox 1000 High-Power Speaker
+  {
+    id: "jbl-partybox-1000",
+    slug: "jbl-partybox-1000",
+    name: "اسپیکر خانگی و مهمانی جی‌بی‌ال مدل PartyBox 1000 توان ۱۱۰۰ وات",
+    englishName: "JBL PartyBox 1000 1100W High Power Bluetooth Speaker",
+    brand: "JBL",
+    category: "speakers-audio",
+    categoryName: "اسپیکر و ساندبار",
+    price: 76000000,
+    originalPrice: 82000000,
+    discount: 7,
+    rating: 4.8,
+    reviewCount: 78,
+    image: "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "قدرتمندترین غول صوتی جی‌بی‌ال با ۱۱۰۰ وات توان واقعی، صفحه پد DJ روی اسپیکر با قابلیت نواختن درام و پیانو، نورپردازی سراسری پنل جلویی هماهنگ با ریتم و دستبند تعاملی مچ دست Air Gesture.",
+    shortDescription: "توان ۱۱۰۰ وات، ووفر ۱۲ اینچی پرتاب زمین، پد کامل دی‌جی و ورودی گیتار و میکروفون",
+    stock: 7,
+    featured: true,
+    bestseller: true,
+    badge: "بیس وحشتناک",
+    specsHighlights: [
+      { label: "توان واقعی", value: "۱۱۰۰ وات RMS" },
+      { label: "ساب‌ووفر", value: "۱۲ اینچ Down-Firing" },
+      { label: "قابلیت ویژه", value: "DJ Launchpad لمسی" },
+      { label: "نورپردازی", value: "Full Panel LED Show" },
+    ],
+    specifications: [
+      {
+        group: "قدرت صوتی",
+        items: [
+          { label: "پاسخ فرکانسی", value: "۳۰ هرتز تا ۲۰ کیلوهرتز" },
+          { label: "ورودی‌ها", value: "ورودی RCA، جک ۳.۵، ورودی میکروفون و گیتار با ولوم مجزا" },
+          { label: "جابه‌جایی", value: "چرخ‌های مخفی و دستگیره چمدانی بادوام" },
+        ],
+      },
+    ],
+    features: [
+      "پد دی‌جی اختصاصی برای میکس لایو و افکت‌های صوتی",
+      "امکان اتصال دو اسپیکر به صورت بی‌سیم با تکنولوژی TWS",
+      "دستبند کنترل اشاره دست جهت تغییر رنگ نورپردازی",
+    ],
+  },
+
+  // 7. Bose Smart Ultra Soundbar
+  {
+    id: "bose-smart-ultra-soundbar",
+    slug: "bose-smart-ultra-soundbar",
+    name: "ساندبار فوق هوشمند بوز مدل Smart Ultra Soundbar با Dolby Atmos",
+    englishName: "Bose Smart Ultra Soundbar with Dolby Atmos and AI Dialogue",
+    brand: "Bose",
+    category: "speakers-audio",
+    categoryName: "اسپیکر و ساندبار",
+    price: 59000000,
+    originalPrice: 65000000,
+    discount: 9,
+    rating: 4.9,
+    reviewCount: 36,
+    image: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "اوج طراحی مینیمال و لوکس بوز با رویه شیشه مات پولیش‌شده حرارت‌دیده. مجهز به هوش مصنوعی تقویت مکالمه AI Dialogue Mode و تکنولوژی TrueSpace برای خلق صدای فراگیر حتی از محتواهای استریو عادی.",
+    shortDescription: "طراحی شیشه نشکن پریمیوم، تفکیک استثنایی گفتار با هوش مصنوعی و اتصال AirPlay",
+    stock: 5,
+    featured: false,
+    bestseller: false,
+    badge: "لوکس و شفاف",
+    specsHighlights: [
+      { label: "جنس بدنه", value: "شیشه آبدیده و مش فلزی" },
+      { label: "هوش مکالمه", value: "AI Dialogue Mode" },
+      { label: "فناوری ارتقا", value: "Bose TrueSpace Spatial" },
+      { label: "کالیبره", value: "ADAPTiQ Headset Tuning" },
+    ],
+    specifications: [
+      {
+        group: "سیستم صوتی",
+        items: [
+          { label: "درایورهای فراگیر", value: "۹ اسپیکر شامل دو درایور سقف‌زن داون‌فایرینگ" },
+          { label: "کنترل صدا", value: "اپلیکیشن اختصاصی Bose Music App" },
+        ],
+      },
+    ],
+    features: [
+      "وضوح دیالوگ‌های بازیگران بدون افزایش آزاردهنده صدای انفجارها",
+      "همگام‌سازی آسان با هدفون‌های بوز جهت گوش دادن خصوصی شبانه",
+    ],
+  },
+
+  // 8. Marshall Stanmore III Bluetooth Speaker
+  {
+    id: "marshall-stanmore-3-speaker",
+    slug: "marshall-stanmore-3-speaker",
+    name: "اسپیکر رومیزی لوکس مارشال مدل Stanmore III طراحی رترو",
+    englishName: "Marshall Stanmore III Home Bluetooth Speaker",
+    brand: "Marshall",
+    category: "speakers-audio",
+    categoryName: "اسپیکر و ساندبار",
+    price: 24500000,
+    originalPrice: 27000000,
+    discount: 9,
+    rating: 4.8,
+    reviewCount: 95,
+    image: "https://images.unsplash.com/photo-1520523839898-507125cd53c1?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1520523839898-507125cd53c1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "نماد موسیقی راک اند رول با بافت چرمی و دکمه‌های چرخشی برنجی آنالوگ. استیج صوتی عریض‌تر نسبت به نسل قبل، جبران رزونانس محیطی Placement Compensation و بلوتوث نسل ۵.۲ با LE Audio.",
+    shortDescription: "طراحی کلاسیک وینتیج، کلیدهای برنجی تنطیم بیس و تریبل و بیس شگفت‌انگیز",
+    stock: 12,
+    featured: true,
+    bestseller: true,
+    badge: "طراحی کلاسیک",
+    specsHighlights: [
+      { label: "طراحی", value: "وینتیج کلاسیک با چرم و برنج" },
+      { label: "توان خروجی", value: "۸۰ وات کلاس D" },
+      { label: "اتصال", value: "بلوتوث ۵.۲ و جک ۳.۵ و RCA" },
+    ],
+    specifications: [
+      {
+        group: "مشخصات فنی",
+        items: [
+          { label: "آمپلی‌فایر", value: "۱ آمپلی‌فایر ۵۰ وات ووفر + ۲ آمپلی‌فایر ۱۵ وات توییتر" },
+          { label: "حداکثر شدت صوت", value: "97dB در فاصله ۱ متر" },
+        ],
+      },
+    ],
+    features: [
+      "دکمه‌های فیزیکی لمسی برنجی با نور پس‌زمینه قرمز",
+      "تولید صدای گرم، پرملات و بدون تحریف آکوستیک حتی در ولوم نهایی",
+    ],
+    variants: [
+      { id: "black", name: "مشکی کلاسیک", colorHex: "#111111", inStock: true },
+      { id: "cream", name: "کرم شیری عاج", colorHex: "#EDE8D0", inStock: true },
+      { id: "brown", name: "قهوه‌ای وینتیج", colorHex: "#543310", inStock: false },
+    ],
+  },
+
+  // 9. Sony WH-1000XM5 Wireless Headphones
+  {
+    id: "sony-wh-1000xm5-headphones",
+    slug: "sony-wh-1000xm5-headphones",
+    name: "هدفون پرچمدار بی‌سیم سونی مدل WH-1000XM5 با نویز کنسلینگ دوگانه",
+    englishName: "Sony WH-1000XM5 Wireless Noise Cancelling Headphones",
+    brand: "Sony",
+    category: "headphones",
+    categoryName: "هدفون و هندزفری",
+    price: 21900000,
+    originalPrice: 24500000,
+    discount: 11,
+    rating: 4.9,
+    reviewCount: 142,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "پادشاه حذف نویز جهان با دو پردازنده اختصاصی V1 و QN1 و هشت میکروفون ردیاب نویز. درایور فیبر کربن ۳۰ میلی‌متری، راحتی بی‌وزن روی سر، پشتیبانی از کدک وضوح بالا LDAC و ۳۰ ساعت باتری مداوم.",
+    shortDescription: "قوی‌ترین سیستم ANC جهان، صدای Hi-Res Wireless و شارژدهی ۳۰ ساعته",
+    stock: 14,
+    featured: true,
+    bestseller: true,
+    badge: "بهترین نویزکنسلینگ",
+    specsHighlights: [
+      { label: "پردازنده‌ها", value: "HD Noise Cancelling QN1 + V1" },
+      { label: "میکروفون‌ها", value: "۸ میکروفون بیم‌فورمینگ" },
+      { label: "شارژدهی", value: "۳۰ ساعت مداوم با ANC روشن" },
+      { label: "کدک‌ها", value: "LDAC, AAC, SBC, DSEE Extreme" },
+    ],
+    specifications: [
+      {
+        group: "مشخصات صدا",
+        items: [
+          { label: "درایور", value: "۳۰ میلی‌متری از جنس کامپوزیت فیبر کربن سبک" },
+          { label: "وزن", value: "تنها ۲۵۰ گرم با روکش چرم فوق نرم Soft Fit" },
+        ],
+      },
+    ],
+    features: [
+      "قابلیت Speak-to-Chat جهت متوقف شدن آنی موسیقی با شروع صحبت شما",
+      "قابلیت شارژ سریع: ۳ دقیقه شارژ = ۳ ساعت پخش مداوم",
+      "اتصال همزمان به دو دستگاه لپ‌تاپ و گوشی (Multipoint)",
+    ],
+    variants: [
+      { id: "black", name: "مشکی مات", colorHex: "#1c1c1e", inStock: true },
+      { id: "silver", name: "نقره‌ای پلاتینیوم", colorHex: "#e5e5ea", inStock: true },
+      { id: "midnight-blue", name: "سرمه‌ای شیک", colorHex: "#1b2a47", inStock: true },
+    ],
+  },
+
+  // 10. Apple AirPods Max
+  {
+    id: "apple-airpods-max",
+    slug: "apple-airpods-max",
+    name: "هدفون روگوشی اپل مدل AirPods Max با بدنه آلومینیومی و صدای فضایی",
+    englishName: "Apple AirPods Max with Spatial Audio and Active Noise Cancellation",
+    brand: "Apple",
+    category: "headphones",
+    categoryName: "هدفون و هندزفری",
+    price: 36800000,
+    originalPrice: 39500000,
+    discount: 7,
+    rating: 4.8,
+    reviewCount: 88,
+    image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "اوج هماهنگی آکوستیک و زیبایی صنعتی با فنجان‌های گوشی آلومینیوم آنودایز شده و هدبند توری تنفس‌پذیر مشبک. مجهز به دو تراشه Apple H1، اکولایزر تطبیقی، حالت ترنسپرنسی شفاف و صدای فضایی با ردیابی پویای سر.",
+    shortDescription: "بدنه آلومینیوم صیقلی، تراشه دوقلوی H1 و ردیابی داینامیک حرکات سر",
+    stock: 8,
+    featured: true,
+    bestseller: false,
+    badge: "شاهکار اپل",
+    specsHighlights: [
+      { label: "تراشه‌ها", value: "۲ عدد چیپ Apple H1 در هر گوش" },
+      { label: "فناوری صدا", value: "Personalized Spatial Audio" },
+      { label: "طراحی هدبند", value: "توری مش تنفس‌پذیر برای کاهش فشار" },
+    ],
+    specifications: [
+      {
+        group: "سخت‌افزار",
+        items: [
+          { label: "درایور", value: "۴۰ میلی‌متری طراحی اختصاصی اپل با دو موتور آهنربایی نئودیمیوم" },
+          { label: "باتری", value: "۲۰ ساعت مداوم با حالت صدای فضایی فعال" },
+        ],
+      },
+    ],
+    features: [
+      "کلید چرخان دیجیتال کراون شبیه اپل واچ برای تنظیم میلی‌متری حجم صدا",
+      "تعویض آنی بین تمام دستگاه‌های اکوسیستم اپل با یک کلیک",
+    ],
+    variants: [
+      { id: "space-gray", name: "خاکستری فضایی", colorHex: "#3a3a3c", inStock: true },
+      { id: "silver", name: "نقره‌ای متالیک", colorHex: "#d1d1d6", inStock: true },
+      { id: "sky-blue", name: "آبی آسمانی", colorHex: "#7099b2", inStock: true },
+      { id: "pink", name: "رزگلد صورتی", colorHex: "#d88a8a", inStock: false },
+    ],
+  },
+
+  // 11. Bose QuietComfort Ultra Headphones
+  {
+    id: "bose-quietcomfort-ultra",
+    slug: "bose-quietcomfort-ultra",
+    name: "هدفون بوز مدل QuietComfort Ultra مجهز به فناوری صدای غوطه‌ور",
+    englishName: "Bose QuietComfort Ultra Wireless Headphones with Immersive Audio",
+    brand: "Bose",
+    category: "headphones",
+    categoryName: "هدفون و هندزفری",
+    price: 26500000,
+    originalPrice: 28900000,
+    discount: 8,
+    rating: 4.8,
+    reviewCount: 39,
+    image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "راحت‌ترین هدفون دور گوشی دنیا با بالشتک‌های فوق نرم لوکس. فناوری Bose Immersive Audio صدا را از درون سر به فضای بیرونی روبه‌روی شما می‌برد تا حس حضور در کنسرت زنده را تجربه کنید.",
+    shortDescription: "فوق‌العاده ارگونومیک، صدای فضایی Bose Immersive و نویزگیر CustomTune",
+    stock: 9,
+    featured: false,
+    bestseller: false,
+    badge: "راحتی مطلق",
+    specsHighlights: [
+      { label: "تکنولوژی نویزگیر", value: "CustomTune متناسب با فرم گوش" },
+      { label: "صدای ۳ بعدی", value: "Bose Immersive Audio" },
+      { label: "شارژدهی", value: "تا ۲۴ ساعت استفاده مداوم" },
+    ],
+    specifications: [
+      {
+        group: "امکانات",
+        items: [
+          { label: "کدک بلوتوث", value: "Snapdragon Sound aptX Lossless" },
+          { label: "حالت‌ها", value: "Quiet Mode, Aware Mode, Immersion Mode" },
+        ],
+      },
+    ],
+    features: [
+      "آنالیز منحصربه‌فرد مجرای گوش هر کاربر برای ایجاد پاسخ فرکانسی اختصاصی",
+      "بدنه تاشو فوق جمع‌وجور با کیف محافظ مسافرتی پروانه‌ای",
+    ],
+    variants: [
+      { id: "black", name: "مشکی مات", colorHex: "#1a1a1a", inStock: true },
+      { id: "white-smoke", name: "دودی سفید", colorHex: "#e3e3e3", inStock: true },
+    ],
+  },
+
+  // 12. JBL Tour ONE M2
+  {
+    id: "jbl-tour-one-m2",
+    slug: "jbl-tour-one-m2",
+    name: "هدفون بی‌سیم جی‌بی‌ال مدل Tour ONE M2 با درایور Hi-Res و شارژ ۵۰ ساعته",
+    englishName: "JBL Tour ONE M2 Wireless Over-Ear Headphones with True Adaptive ANC",
+    brand: "JBL",
+    category: "headphones",
+    categoryName: "هدفون و هندزفری",
+    price: 16900000,
+    originalPrice: 18800000,
+    discount: 10,
+    rating: 4.7,
+    reviewCount: 47,
+    image: "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "هدفون پریمیوم بیزینس و مسافرتی JBL با ۵۰ ساعت شارژدهی شگفت‌انگیز و ۴ میکروفون تطبیق‌پذیر. صدای هیجان‌انگیز مشهور JBL Pro Sound با قابلیت شخصی‌سازی شنوایی Personi-Fi 2.0.",
+    shortDescription: "شارژدهی خارق‌العاده ۵۰ ساعت، درایور داینامیک ۴۰ میلی‌متری و نویزگیر هوشمند",
+    stock: 11,
+    featured: false,
+    bestseller: false,
+    badge: "باتری ۵۰ ساعته",
+    specsHighlights: [
+      { label: "طول عمر باتری", value: "۵۰ ساعت (بدون ANC) / ۳۰ ساعت (با ANC)" },
+      { label: "درایور", value: "۴۰ میلی‌متری تیونینگ شده JBL Pro" },
+      { label: "میکروفون", value: "۴ میکروفون مکالمه کریستالی VoiceAware" },
+    ],
+    specifications: [
+      {
+        group: "اتصال",
+        items: [
+          { label: "بلوتوث", value: "نسخه ۵.۳ با پشتیبانی از LE Audio" },
+          { label: "وزن", value: "۲۷۸ گرم" },
+        ],
+      },
+    ],
+    features: [
+      "تنظیم میزان شنیده شدن صدای خود حین مکالمات تلفنی با VoiceAware",
+      "پشتیبانی از فناوری شارژ فوق سریع: ۱۰ دقیقه شارژ برای ۵ ساعت کارکرد",
+    ],
+  },
+
+  // 13. Sony HT-A9 Wireless Home Cinema System
+  {
+    id: "sony-ht-a9-home-theater",
+    slug: "sony-ht-a9-home-theater",
+    name: "سینمای خانگی بی‌سیم سونی مدل HT-A9 با فناوری ۱۲ اسپیکر مجازی",
+    englishName: "Sony HT-A9 High-End Wireless Home Theater System with 360 Spatial Sound",
+    brand: "Sony",
+    category: "home-theater",
+    categoryName: "سینمای خانگی",
+    price: 94000000,
+    originalPrice: 105000000,
+    discount: 10,
+    rating: 5.0,
+    reviewCount: 31,
+    image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "انقلابی‌ترین سیستم سینمای خانگی تاریخ با ۴ بلندگوی سیلندری تماماً بی‌سیم که با تکنولوژی 360 Spatial Sound Mapping تا ۱۲ بلندگوی شبحی در پیرامون شما خلق می‌کنند. نیاز به سیم‌کشی ندارد و در هر کجای اتاق قابل چیدمان است.",
+    shortDescription: "سیستم ۴ اسپیکر بی‌سیم انقلابی با شبیه‌سازی ۱۲ نقطه صوتی معلق در فضا",
+    stock: 4,
+    featured: true,
+    bestseller: true,
+    badge: "سینمای انقلابی",
+    specsHighlights: [
+      { label: "اسپیکرها", value: "۴ عدد بدون سیم با قابلیت چیدمان آزاد" },
+      { label: "بلندگوهای مجازی", value: "۱۲ کانال صوتی فضایی" },
+      { label: "رزولوشن ورودی", value: "8K HDR / 4K 120Hz Passthrough" },
+      { label: "فرمت صدا", value: "Dolby Atmos, DTS:X, Hi-Res Wireless" },
+    ],
+    specifications: [
+      {
+        group: "مشخصات فنی",
+        items: [
+          { label: "کالیبره هوشمند", value: "Sound Field Optimization با اندازه‌گیری فاصله با سقف و دیوارها" },
+          { label: "پروتکل اتصال", value: "شبکه اختصاصی بی‌سیم فرکانس بالا بدون تاخیر" },
+        ],
+      },
+    ],
+    features: [
+      "چیدمان انعطاف‌پذیر حتی با ارتفاع‌های نامتقارن بدون افت کیفیت صدا",
+      "حس واقعی عبور هلیکوپتر یا قطرات باران بالای سر در اتاق نشیمن",
+    ],
+  },
+
+  // 14. Sonos Arc + Sub Gen 3 Premium Surround Set
+  {
+    id: "sonos-arc-sub-surround-set",
+    slug: "sonos-arc-sub-surround-set",
+    name: "پکیج پریمیوم ساندبار و ساب‌ووفر سونوس مدل Sonos Arc & Sub Gen 3",
+    englishName: "Sonos Arc Soundbar + Sub Gen 3 Premium Surround Bundle",
+    brand: "Sonos",
+    category: "home-theater",
+    categoryName: "سینمای خانگی",
+    price: 112000000,
+    originalPrice: 122000000,
+    discount: 8,
+    rating: 4.9,
+    reviewCount: 44,
+    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "ترکیب پرچمدار صوتی برند آمریکایی سونوس با ۱۱ درایور آکوستیک دقیق در آرک به همراه ساب‌ووفر دوگانه خنثی‌کننده لرزش Sub Gen 3. تفکیک صدای در حد استودیوهای میکس هالیوود با بیس بدون لرزش بدنه.",
+    shortDescription: "ترکیب ساندبار پرچمدار ۱۱ درایوره با ساب‌ووفر بدون لرزش Sub Gen 3 سونوس",
+    stock: 5,
+    featured: true,
+    bestseller: false,
+    badge: "پکیج کامل سینمایی",
+    specsHighlights: [
+      { label: "تعداد درایورها", value: "۱۱ درایور در آرک + ۲ ووفر در ساب" },
+      { label: "سیستم بیس", value: "Force-Cancelling Subwoofer" },
+      { label: "کالیبراسیون", value: "Sonos Trueplay Tuning" },
+    ],
+    specifications: [
+      {
+        group: "اتصالات",
+        items: [
+          { label: "پورت ارتباطی", value: "HDMI eARC, Optical Adapter, Ethernet" },
+          { label: "سازگاری", value: "Apple AirPlay 2, Spotify, Tidal Hi-Fi" },
+        ],
+      },
+    ],
+    features: [
+      "عدم ایجاد لرزش روی میز یا زمین به لطف ووفرهای روبه‌روی هم در ساب‌ووفر",
+      "کالیبراسیون دقیق Trueplay با میکروفون آیفون جهت تطبیق با هندسه اتاق",
+    ],
+    variants: [
+      { id: "black", name: "مشکی مات لوکس", colorHex: "#111111", inStock: true },
+      { id: "white", name: "سفید ابریشمی", colorHex: "#f0f0f0", inStock: true },
+    ],
+  },
+
+  // 15. Sony PlayStation 5 Slim Digital & Disc Edition
+  {
+    id: "sony-playstation-5-slim-1tb",
+    slug: "sony-playstation-5-slim-1tb",
+    name: "کنسول بازی سونی مدل PlayStation 5 Slim ظرفیت ۱ ترابایت نسخه دیسک‌خور",
+    englishName: "Sony PlayStation 5 Slim 1TB Disc Edition Gaming Console",
+    brand: "Sony",
+    category: "gaming-consoles",
+    categoryName: "کنسول و گیمینگ",
+    price: 43500000,
+    originalPrice: 47000000,
+    discount: 7,
+    rating: 4.9,
+    reviewCount: 215,
+    image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "نسل جدید کنسول محبوب پلی‌استیشن ۵ با ابعاد ۳۰٪ کوچکتـر، وزن ۲۴٪ سبک‌تر و حافظه پرسرعت ۱ ترابایتی SSD. همراه با دسته بی‌نظیر DualSense با تریگرهای تطبیق‌پذیر و بازخورد هپتیک لمسی فوق‌العاده واقعی.",
+    shortDescription: "حافظه داخلی ۱ ترابایت، پردازنده گرافیکی RDNA 2، ری‌تریسینگ و اجرای ۴K با ۱۲۰ فریم",
+    stock: 18,
+    featured: true,
+    bestseller: true,
+    badge: "محبوب‌ترین گیمینگ",
+    specsHighlights: [
+      { label: "حافظه ذخیره‌سازی", value: "۱ ترابایت SSD فوق پرسرعت ۵.۵GB/s" },
+      { label: "خروجی تصویر", value: "4K 120Hz / 8K Passthrough / HDR" },
+      { label: "دسته همراه", value: "دسته بازی بی‌سیم DualSense" },
+      { label: "فناوری صوتی", value: "Tempest 3D AudioTech" },
+    ],
+    specifications: [
+      {
+        group: "سخت‌افزار اصلی",
+        items: [
+          { label: "پردازنده مرکزی", value: "AMD Zen 2 با ۸ هسته و ۱۶ رشته با فرکانس متغیر ۳.۵ گیگاهرتز" },
+          { label: "پردازنده گرافیکی", value: "مبتنی بر معماری RDNA 2 با توان ۱۰.۲۸ ترافلاپس" },
+          { label: "حافظه رم", value: "۱۶ گیگابایت حافظه GDDR6 با پهنای باند ۴۴۸GB/s" },
+        ],
+      },
+    ],
+    features: [
+      "لودینگ نزدیک به صفر ثانیه‌ای در بازی‌های انحصاری سونی",
+      "حس کشیده شدن کمان و شلیک تیر با تریگرهای مقاومتی دسته DualSense",
+      "پشتیبانی از فناوری بازسازی تصویر PSSR در بروزرسانی‌های نرم‌افزاری",
+    ],
+    variants: [
+      { id: "disc", name: "نسخه استاندارد (دیسک‌خور)", inStock: true },
+      { id: "digital", name: "نسخه دیجیتال (بدون درایو)", priceModifier: -4000000, inStock: true },
+    ],
+  },
+
+  // 16. PlayStation VR2 Sense Headset
+  {
+    id: "sony-playstation-vr2",
+    slug: "sony-playstation-vr2",
+    name: "هدست واقعیت مجازی سونی مدل PlayStation VR2 همراه با کنترلر Sense",
+    englishName: "Sony PlayStation VR2 Headset with Horizon Call of the Mountain",
+    brand: "Sony",
+    category: "gaming-consoles",
+    categoryName: "کنسول و گیمینگ",
+    price: 38900000,
+    originalPrice: 42000000,
+    discount: 7,
+    rating: 4.8,
+    reviewCount: 52,
+    image: "https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1622979135225-d2ba269bc1df?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "نسل جدید واقعیت مجازی با پنل‌های OLED دوگانه با رزولوشن 2000x2040 برای هر چشم، ردیابی چشم هوشمند با foveated rendering، بازخورد لرزشی هپتیک درون خود هدست و کنترلرهای شگفت‌انگیز Sense.",
+    shortDescription: "رزولوشن 4K HDR، ردیابی مردمک چشم، بازخورد لرزشی درون هدست و میدان دید ۱۱۰ درجه",
+    stock: 6,
+    featured: false,
+    bestseller: false,
+    badge: "واقعیت مجازی",
+    specsHighlights: [
+      { label: "نمایشگر", value: "دو پنل OLED با رزولوشن 4K HDR" },
+      { label: "میدان دید", value: "۱۱۰ درجه با لنزهای فرنل قابل تنظیم" },
+      { label: "ردیابی چشم", value: "دوربین‌های مادون قرمز IR" },
+    ],
+    specifications: [
+      {
+        group: "سنسورها",
+        items: [
+          { label: "سنسور حرکتی", value: "سیستم سنجش حرکت شش محوره ژیروسکوپ و شتاب‌سنج" },
+          { label: "دوربین‌ها", value: "۴ دوربین برای ردیابی هدست و کنترلرها بدون نیاز به سنسور خارجی" },
+        ],
+      },
+    ],
+    features: [
+      "دیدن محیط واقعی اتاق بدون برداشتن هدست با زدن یک دکمه (See-Through View)",
+      "احساس وزش باد یا پرواز اشیا از کنار شقیقه با موتور هپتیک هدست",
+    ],
+  },
+
+  // 17. Apple HomePod 2nd Generation
+  {
+    id: "apple-homepod-2nd-gen",
+    slug: "apple-homepod-2nd-gen",
+    name: "اسپیکر هوشمند اپل مدل HomePod نسل دوم با صدای محاسباتی و تراشه S7",
+    englishName: "Apple HomePod (2nd generation) Smart Speaker with Spatial Audio",
+    brand: "Apple",
+    category: "smart-home",
+    categoryName: "گجت‌ها و خانه هوشمند",
+    price: 19800000,
+    originalPrice: 22000000,
+    discount: 10,
+    rating: 4.8,
+    reviewCount: 67,
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "اسپیکر هوشمند مرجع اپل با ساب‌ووفر با گستره جابه‌جایی ۲۰ میلی‌متر، پنج توییتر بیم‌فورمینگ شیپوردار، حسگرهای داخلی دما و رطوبت و پشتیبانی از پروتکل فراگیر خانه هوشمند Matter.",
+    shortDescription: "صدای آکوستیک اتاق با آنالیز بلادرنگ، دستیار صوتی Siri و حسگر دما/رطوبت",
+    stock: 12,
+    featured: true,
+    bestseller: false,
+    badge: "خانه هوشمند",
+    specsHighlights: [
+      { label: "پردازشگر", value: "Apple S7 با سنسور تشخیص اتاق" },
+      { label: "سنسورها", value: "حسگر دما، رطوبت و تشخیص هشدار دود" },
+      { label: "پروتکل‌ها", value: "Matter, Thread, AirPlay 2, Wi-Fi 802.11n" },
+    ],
+    specifications: [
+      {
+        group: "آکوستیک",
+        items: [
+          { label: "ووفر", value: "ووفر ۴ اینچی پرقدرت با کنترل آهنربایی نئودیمیوم" },
+          { label: "توییترها", value: "آرایه ۵ تایی توییتر با پرتاب موج زاویه‌دار" },
+        ],
+      },
+    ],
+    features: [
+      "اتصال دو هوم‌پاد به عنوان سیستم استریو استودیویی برای Apple TV 4K",
+      "اجرای خودکار سناریوهای پرده و کولر با سنجش دمای محیط",
+    ],
+    variants: [
+      { id: "midnight", name: "میدنایت ذغالی", colorHex: "#1c2024", inStock: true },
+      { id: "white", name: "سفید صدفی", colorHex: "#f7f7f7", inStock: true },
+    ],
+  },
+
+  // 18. Philips Hue Gradient Lightstrip 65" TV
+  {
+    id: "philips-hue-gradient-lightstrip-65",
+    slug: "philips-hue-gradient-lightstrip-65",
+    name: "نوار نورپردازی هوشمند فیلیپس هیو مدل Play Gradient Lightstrip مخصوص تلویزیون ۶۵ اینچ",
+    englishName: "Philips Hue Play Gradient Lightstrip for 65-inch TVs",
+    brand: "Philips",
+    category: "smart-home",
+    categoryName: "گجت‌ها و خانه هوشمند",
+    price: 18500000,
+    originalPrice: 20500000,
+    discount: 10,
+    rating: 4.9,
+    reviewCount: 38,
+    image: "https://images.unsplash.com/photo-1507038772120-7ffe76f79d79?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1507038772120-7ffe76f79d79?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "تبدیل هر تلویزیونی به تجربه سینمایی امبیلایت با ترکیب گرادیانت همزمان چندین رنگ روی دیوار. هماهنگی صدم ثانیه‌ای با فیلم‌ها، مسابقات ورزشی و بازی‌ها از طریق باکس همگام‌ساز Hue Play HDMI Sync Box.",
+    shortDescription: "ترکیب همزمان چند رنگ روی یک نوار، زاویه پرتاب نور ۴۵ درجه به دیوار",
+    stock: 10,
+    featured: false,
+    bestseller: false,
+    badge: "نورپردازی سینمایی",
+    specsHighlights: [
+      { label: "سایز پشتیبانی", value: "تلویزیون‌های ۶۵ تا ۷۰ اینچ" },
+      { label: "زاویه نوردهی", value: "۴۵ درجه مایل به سمت دیوار" },
+      { label: "طول عمر ال‌ای‌دی", value: "۲۵,۰۰۰ ساعت (بیش از ۱۰ سال)" },
+    ],
+    specifications: [
+      {
+        group: "مشخصات نوری",
+        items: [
+          { label: "میزان روشنایی", value: "۱۱۰۰ لومن در ۴۰۰۰ کلوین" },
+          { label: "پروتکل اتصال", value: "Zigbee و Bluetooth" },
+        ],
+      },
+    ],
+    features: [
+      "انعکاس رنگ‌های دقیقی که در لبه‌های راست، چپ و بالای صفحه تلویزیون در حال پخش است",
+      "پایه‌های مخصوص نصب آسان بدون آسیب به بدنه تلویزیون",
+    ],
+  },
+
+  // 19. Samsung The Frame LS03B 65" Art TV
+  {
+    id: "samsung-the-frame-65-ls03b",
+    slug: "samsung-the-frame-65-ls03b",
+    name: "تلویزیون هنری ۶۵ اینچ سامسونگ مدل The Frame LS03B با صفحه مات مات ضد انعکاس",
+    englishName: "Samsung 65-inch The Frame LS03B QLED 4K Smart Art TV",
+    brand: "Samsung",
+    category: "tv-displays",
+    categoryName: "تلویزیون و نمایشگر",
+    price: 98000000,
+    originalPrice: 108000000,
+    discount: 9,
+    rating: 4.8,
+    reviewCount: 41,
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "وقتی خاموش است یک تابلوی نقاشی گرانبها از موزه لوور است و وقتی روشن است یک تلویزیون کوانتوم دات 4K با ۱۲۰ هرتز رفرش ریت. دارای روکش صفحه کاملاً مات که حتی انعکاس لامپ یا پنجره را هم نشان نمی‌دهد.",
+    shortDescription: "صفحه کامپوزیت کاملاً مات، قاب‌های مغناطیسی چوبی قابل تعویض و حالت Art Mode",
+    stock: 7,
+    featured: true,
+    bestseller: false,
+    badge: "تابلوی هنری",
+    specsHighlights: [
+      { label: "پوشش صفحه", value: "صفحه مات ضدانعکاس Matte Display" },
+      { label: "قاب دور", value: "قاب‌های آهنربایی چوبی قابل تعویض" },
+      { label: "کابل ارتباطی", value: "یک کابل نامرئی شفاف One Invisible Connection" },
+    ],
+    specifications: [
+      {
+        group: "نمایش تصویر",
+        items: [
+          { label: "رزولوشن", value: "4K QLED با صد در صد حجم رنگ" },
+          { label: "حالت نقاشی", value: "Art Store با دسترسی به ۲۵۰۰ اثر هنری جهانی" },
+        ],
+      },
+    ],
+    features: [
+      "حسگر حضور که با ورود فرد به اتاق تابلوی نقاشی را روشن و با خروج خاموش می‌کند",
+      "تنها یک کابل باریک شیشه‌ای شفاف تا باکس اتصالات One Connect زیر میز",
+    ],
+    variants: [
+      { id: "teak", name: "قاب چوب ساج", colorHex: "#966f33", inStock: true },
+      { id: "walnut", name: "قاب گردویی تیره", colorHex: "#3e2723", inStock: true },
+      { id: "white", name: "قاب سفید مدرن", colorHex: "#ffffff", inStock: true },
+    ],
+  },
+
+  // 20. JBL Bar 1300X 11.1.4 Flagship Soundbar
+  {
+    id: "jbl-bar-1300x-soundbar",
+    slug: "jbl-bar-1300x-soundbar",
+    name: "ساندبار غول‌پیکر جی‌بی‌ال مدل Bar 1300X با اسپیکرهای سراند جداشونده بی‌سیم",
+    englishName: "JBL Bar 1300X 11.1.4-Channel Dolby Atmos Soundbar with Detachable Surrounds",
+    brand: "JBL",
+    category: "speakers-audio",
+    categoryName: "اسپیکر و ساندبار",
+    price: 88500000,
+    originalPrice: 96000000,
+    discount: 8,
+    rating: 4.9,
+    reviewCount: 35,
+    image: "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "قدرتمندترین ساندبار جی‌بی‌ال با ۱۱۷۰ وات توان خروجی، ساب‌ووفر مهیب ۱۲ اینچی بی‌سیم و دو بلندگوی عقب باتری‌دار که با آهنربا به دو طرف ساندبار متصل یا جدا می‌شوند تا در پشت مبل قرار گیرند.",
+    shortDescription: "توان ۱۱۷۰ وات، کانال ۱۱.۱.۴، ساب ۱۲ اینچ و اسپیکرهای سراند جداشونده شارژی",
+    stock: 5,
+    featured: false,
+    bestseller: true,
+    badge: "۱۱۷۰ وات خالص",
+    specsHighlights: [
+      { label: "توان کل", value: "۱۱۷۰ وات RMS" },
+      { label: "تعداد کانال‌ها", value: "۱۱.۱.۴ کاناله واقعی" },
+      { label: "ساب‌ووفر", value: "۱۲ اینچ ۳۰۰ وات بیس زلزله‌ای" },
+      { label: "اسپیکر سراند", value: "جداشونده بی‌سیم با باتری ۱۰ ساعته" },
+    ],
+    specifications: [
+      {
+        group: "تجهیزات صوتی",
+        items: [
+          { label: "کالیبره هوشمند", value: "MultiBeam Audio Calibration با یک دکمه" },
+          { label: "فرمت‌ها", value: "Dolby Atmos, DTS:X, PureVoice Dialogue Enhancement" },
+        ],
+      },
+    ],
+    features: [
+      "بلندگوهای عقبی که بدون نیاز به سیم برق در پشت مبل قرار می‌گیرند",
+      "استفاده مستقل از هر بلندگوی جداشونده به عنوان یک اسپیکر بلوتوثی پرتابل",
+    ],
+  },
+
+  // 21. Apple TV 4K 128GB Wi-Fi + Ethernet
+  {
+    id: "apple-tv-4k-128gb",
+    slug: "apple-tv-4k-128gb",
+    name: "تی‌وی باکس اپل مدل Apple TV 4K ظرفیت ۱۲۸ گیگابایت مجهز به چیپست A15 Bionic",
+    englishName: "Apple TV 4K 128GB Wi-Fi + Ethernet with Siri Remote",
+    brand: "Apple",
+    category: "smart-home",
+    categoryName: "گجت‌ها و خانه هوشمند",
+    price: 15400000,
+    originalPrice: 16900000,
+    discount: 9,
+    rating: 4.9,
+    reviewCount: 112,
+    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "سریع‌ترین و روان‌ترین تجربه پخش فیلم با کیفیت 4K Dolby Vision و صدای سه بعدی Dolby Atmos. پردازنده فوق قدرتمند آیفون A15 Bionic، ریموت کنترل آلومینیومی با درگاه تایپ‌سی و پشتیبانی از پورت گیگابیت اترنت و شبکه Thread.",
+    shortDescription: "چیپست پرچمدار A15 Bionic، کنترل Siri Remote آلومینیومی و رابط فوق روان tvOS",
+    stock: 15,
+    featured: false,
+    bestseller: true,
+    badge: "پخش‌کننده مرجع",
+    specsHighlights: [
+      { label: "پردازنده", value: "Apple A15 Bionic شش هسته‌ای" },
+      { label: "خروجی تصویر", value: "4K HDR, HDR10+, Dolby Vision 60fps" },
+      { label: "شبکه هوشمند", value: "Gigabit Ethernet + Thread Mesh Networking" },
+    ],
+    specifications: [
+      {
+        group: "سیستم و حافظه",
+        items: [
+          { label: "حافظه داخلی", value: "۱۲۸ گیگابایت برای بازی‌ها و اپلیکیشن‌ها" },
+          { label: "ریموت کنترل", value: "Siri Remote لمسی با بدنه آلومینیومی یکپارچه و تایپ‌سی" },
+        ],
+      },
+    ],
+    features: [
+      "کالیبره‌سازی خودکار رنگ تلویزیون با قرار دادن آیفون روبه‌روی صفحه نمایش",
+      "اتصال دو جفت هدفون ایرپاد همزمان برای تماشای دونفره فیلم در سکوت شب",
+    ],
+  },
+
+  // 22. Sony DualSense Edge Wireless Controller
+  {
+    id: "sony-dualsense-edge-controller",
+    slug: "sony-dualsense-edge-controller",
+    name: "کنترلر حرفه‌ای پلی‌استیشن ۵ مدل DualSense Edge با ماژول‌های تعویض‌پذیر",
+    englishName: "PlayStation DualSense Edge Wireless Pro Gaming Controller",
+    brand: "Sony",
+    category: "gaming-consoles",
+    categoryName: "کنسول و گیمینگ",
+    price: 16800000,
+    originalPrice: 18500000,
+    discount: 9,
+    rating: 4.8,
+    reviewCount: 63,
+    image: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "اولین دسته فوق حرفه‌ای مسابقه‌ای ساخت سونی با قابلیت تعویض کامل ماژول‌های آنالوگ استیک، پدال‌های فلزی پشتی قابل برنامه‌ریزی، تنظیم دامنه کور تریگرها در سه سطح و پروفایل‌های نرم‌افزاری اختصاصی.",
+    shortDescription: "کنترلر مسابقات eSports با ماژول استیک تعویض‌پذیر و پدال‌های پشتی فلزی",
+    stock: 9,
+    featured: false,
+    bestseller: false,
+    badge: "دسته پرو گیمینگ",
+    specsHighlights: [
+      { label: "دکمه‌های پشتی", value: "۲ پدال فلزی ارگونومیک قابل برنامه‌ریزی" },
+      { label: "تنظیم تریگر", value: "۳ حالت فیزیکی توقف حرکت تریگر برای شلیک سریع" },
+      { label: "کیف همراه", value: "کیف ضد ضربه هاردکیس با پورت شارژ حین نگهداری" },
+    ],
+    specifications: [
+      {
+        group: "شخصی‌سازی",
+        items: [
+          { label: "ماژول‌های استیک", value: "امکان تعویض سریع استیک‌ها در صورت استهلاک" },
+          { label: "کابل ارتباطی", value: "کابل ۲.۸ متری روکش بافته شده با قفل مکانیکی ضد جدا شدن" },
+        ],
+      },
+    ],
+    features: [
+      "تغییر آنی حساسیت استیک‌ها با کلیدهای اختصاصی Fn زیر دسته",
+      "کلیدهای پشتی برای پرش و خم شدن بدون برداشتن شست از روی آنالوگ هدف‌گیری",
+    ],
+  },
+
+  // 23. Bose QuietComfort Earbuds II
+  {
+    id: "bose-quietcomfort-earbuds-ii",
+    slug: "bose-quietcomfort-earbuds-ii",
+    name: "هندزفری بلوتوثی بوز مدل QuietComfort Earbuds II با نویزکنسلینگ تطبیقی",
+    englishName: "Bose QuietComfort Earbuds II Noise-Cancelling True Wireless Earphones",
+    brand: "Bose",
+    category: "headphones",
+    categoryName: "هدفون و هندزفری",
+    price: 18200000,
+    originalPrice: 20200000,
+    discount: 10,
+    rating: 4.8,
+    reviewCount: 71,
+    image: "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "بهترین ایربادز جهان از نظر مسدود کردن صدای محیط و موتور هواپیما. با ارسال یک تون ملایم صوتی به درون گوش و سنجش انعکاس آن در میلی‌ثانیه، بهترین ایزولاسیون صوتی را دقیقا مطابق آناتومی گوش شما فراهم می‌کند.",
+    shortDescription: "فناوری سنجش آکوستیک گوش CustomTune، گواهی مقاومت در برابر عرق IPX4 و شارژ ۲۴ ساعته",
+    stock: 13,
+    featured: false,
+    bestseller: false,
+    badge: "نویزگیر ایربادز",
+    specsHighlights: [
+      { label: "سیستم ضد آب", value: "IPX4 مقاوم در برابر رطوبت و عرق" },
+      { label: "باتری", value: "۶ ساعت ایرپاد + ۱۸ ساعت با کیس" },
+      { label: "فیتینگ کیت", value: "۳ سایز سری سیلیکونی + ۳ سایز باله ثبات" },
+    ],
+    specifications: [
+      {
+        group: "اتصالات",
+        items: [
+          { label: "نسخه بلوتوث", value: "Bluetooth 5.3 با کدک AAC و SBC" },
+          { label: "میکروفون‌ها", value: "۴ میکروفون در هر گوشی جهت حذف زوزه باد" },
+        ],
+      },
+    ],
+    features: [
+      "حالت ActiveSense که صدای بلند گذرا مثل آژیر را در حالت ترنسپرنسی خودکار نرم می‌کند",
+      "کنترل لمسی روان برای تنظیم ولوم با کشیدن انگشت روی بدنه",
+    ],
+    variants: [
+      { id: "triple-black", name: "مشکی تریپل", colorHex: "#111111", inStock: true },
+      { id: "soapstone", name: "سنگی شیری", colorHex: "#e8e5dc", inStock: true },
+    ],
+  },
+
+  // 24. LG CineBeam Q 4K Portable Laser Projector
+  {
+    id: "lg-cinebeam-q-laser-projector",
+    slug: "lg-cinebeam-q-laser-projector",
+    name: "ویدئو پروژکتور لیزری پرتابل ال‌جی مدل CineBeam Q با کیفیت تصویر 4K UHD",
+    englishName: "LG CineBeam Q 4K UHD Smart Portable Laser Projector with 360 Handle",
+    brand: "LG",
+    category: "home-theater",
+    categoryName: "سینمای خانگی",
+    price: 72000000,
+    originalPrice: 79000000,
+    discount: 9,
+    rating: 4.9,
+    reviewCount: 28,
+    image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1000&q=80",
+    gallery: [
+      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80",
+    ],
+    description: "جمع‌وجورترین و مدرن‌ترین پروژکتور لیزری ۴K دنیا با دسته فلزی چرخشی ۳۶۰ درجه که هم به عنوان پایه رومیزی و هم دسته حمل عمل می‌کند. مجهز به سیستم عامل اختصاصی webOS، فوکوس خودکار آنی و قابلیت پرتاب تصویر تا ۱۲۰ اینچ روی هر دیوار یا سقف.",
+    shortDescription: "تصویر سینمایی تا ۱۲۰ اینچ با منبع نور لیزری ۳ کاناله RGB و بدنه متالیک فوق باریک",
+    stock: 5,
+    featured: true,
+    bestseller: false,
+    badge: "پروژکتور ۴K لیزری",
+    specsHighlights: [
+      { label: "منبع نور", value: "3 Channel RGB Laser با ۲۰,۰۰۰ ساعت عمر" },
+      { label: "سایز تصویر", value: "۵۰ تا ۱۲۰ اینچ با کنتراست ۴۵۰,۰۰۰:۱" },
+      { label: "تنظیم تصویر", value: "Auto Screen Adjustment فوکوس خودکار" },
+      { label: "سیستم عامل", value: "LG webOS 24 با اپلیکیشن‌های استریم" },
+    ],
+    specifications: [
+      {
+        group: "طراحی و فیزیک",
+        items: [
+          { label: "وزن", value: "تنها ۱.۴۹ کیلوگرم" },
+          { label: "دسته چرخشی", value: "آلومینیومی با چرخش ۳۶۰ درجه به عنوان پایه یا دستگیره" },
+          { label: "اتصالات", value: "HDMI eARC, USB Type-C, AirPlay 2, Screen Share" },
+        ],
+      },
+    ],
+    features: [
+      "امکان تاباندن مستقیم تصویر به سقف اتاق خواب برای تماشای درازکش فیلم",
+      "تنظیم هندسی و فوکوس خودکار در کمتر از ۱ ثانیه بدون دخالت دست",
+    ],
+  },
+];
